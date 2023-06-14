@@ -227,10 +227,10 @@ section .Descrip_Section_Tres_H {
     background-color: #0b54519d; }
   .Contenedor_Logo {
     object-fit: cover;
-    width: 500vh;
+    width: 50vh;
     height: 100vh; }
   .logo_img {
-    width: 200vh; }
+    width: 20vh; }
   .Lorem_Index {
     display: none; }
   main .Descripcion_Img {
