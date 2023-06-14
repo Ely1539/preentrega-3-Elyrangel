@@ -1,4 +1,4 @@
 .package.json
 .package-lock.jason
-.node_modules
+node_modules/
 .gitignore
