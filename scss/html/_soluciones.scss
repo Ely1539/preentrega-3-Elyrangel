@@ -1,0 +1,482 @@
+//import
+
+@import "../utilidades/vars";
+@import "../utilidades/mixin";
+/*estilos page soluciones humanas*/
+/*CELULARES*/
+body{
+    background-color: $color-body;
+}
+header{
+    width: 100vh;
+}
+
+main{
+    .Descripcion_Img_S {
+        text-align: center;
+        margin-top: 25vh;
+        display: flex;
+        background-color: $color-descripcion;
+    }
+    
+    .Img_S_Un {
+        display: none;
+        
+    }
+    
+    .Img_S_D {
+    
+        height: 80vh;
+    }
+    
+    .P_Em {
+    
+        margin-top: 2vh;
+        background-color:$color-descripcion;
+        text-align: center;
+        width: 55vh;
+        height: 18vh;
+        border: 2px solid black;
+    
+    }
+    
+    .Img_Sol_U {
+        object-fit: cover;
+        height: 44vh;
+        margin-top: 33vh;
+    
+    }
+    
+    .Img_Sol_T {
+        margin-top: 22vh;
+        object-fit: cover;
+        height: 49.5vh;
+    
+    
+    }
+    
+    .P_Per {
+        background-color: $color-descripcion;
+        text-align: center;
+        width: 55vh;
+        height: 24vh;
+        border: 2px solid black;
+        margin-top: 2vh;
+    }
+    
+    .Img_S_Cu {
+        margin-top: 2vh;
+        height: 50vh;
+    
+    }
+    
+    .Img_Sol_Cu {
+        margin-top: 2vh;
+        object-fit: cover;
+        height: 28vh;
+    }
+    
+    .P_Empresas {
+       
+        background-color:$color-descripcion;
+        text-align: center;
+        width: 55vh;
+        height: 14vh;
+        border: 2px solid black;
+        margin-top: 2vh;
+    }
+    
+    
+    .Img_S_Ci {
+     
+        height: 65vh;
+    }
+    
+    .Img_Sol_Ci {
+        
+        margin-top: 2vh;
+        object-fit: cover;
+        height: 41vh;
+        margin-top: 2vh;
+    }
+    .P_Ej{
+        background-color:$color-descripcion;
+        height: 12vh;
+        width: 55vh;
+        margin-top: 2vh;
+        text-align: center;
+        border: 2px solid black;
+    }
+    .Parrafo_G{
+        background-color:$color-descripcion;
+        width:55vh;
+        text-align: center;
+        border: 2px solid black;
+    }
+
+
+}
+
+
+.Descrip_S_U{
+   background-color: $color-descripcion;
+    text-align: center;
+    width: 55vh;
+    height: 5vh;
+}
+.Descrip_S_T{
+    background-color: $color-section-dos;
+    text-align: center;
+    text-align: center;
+    width: 55vh;
+    height: 12vh;
+}
+.Descrip_S_D{
+  background-color: $color-section-tres;
+    text-align: center;
+    width: 55vh;
+    height: 5vh;
+}
+
+.Footer_E {
+    margin-top: 3vh;
+    text-align: center;
+    width: 55vh;
+    height: 5vh;
+    background-color: $color-descripcion;
+    color: rgb(247, 247, 247);
+  
+}
+
+/*soluciones estilos tablet*/
+@media screen and (min-width:600px){
+
+    main {
+
+        width: 320vh;
+        height: 380vh;
+
+        .Descripcion_Imgs_S {
+            width: 200vh;
+            padding: 1rem;
+            margin-top: 3vh;
+            display: grid;
+            grid-template-columns: 59vh 250px ;
+            grid-template-rows: 60vh 80vh 85vh ;
+            grid-gap: 1rem;
+           
+        
+        }
+            
+        .Img_S_Un {
+            margin-top: 20vh;
+            grid-row:1/2;
+            background-color: tomato;
+            display: block; 
+            height:100vh;
+            width: 50vh;
+        }
+        
+        .Img_Sol{
+            object-fit: cover;
+            height: 45vh;
+        }
+        .P_Co{
+            text-align: center;
+            width: 50vh;
+            font-size: 2vh;
+            height:16vh;
+          
+        
+        }
+        
+        .Img_S_D {
+            grid-row: 1/3;
+            height: 100vh;
+        }
+        
+        .P_Em {
+        
+            margin-top: 2vh;
+            background-color: $color-descripcion;
+            text-align: center;
+            width: 45vh;
+            height: 18vh;
+            border: 2px solid black;
+        
+        }
+        
+        .Img_Sol_U {
+            
+            object-fit: cover;
+            margin-top: 103vh;
+           
+        
+        }
+        .Img_S_T{
+            grid-column: 2/3;
+            height: 20vh;
+        }
+        .Img_Sol_T {
+           
+            margin-top: 50vh;
+            object-fit: cover;
+            height: 39vh;
+        }
+        
+        .P_Per {
+            background-color:$color-descripcion;
+            text-align: center;
+            width: 48vh;
+            height: 25vh;
+            border: 2px solid black;
+          
+        }
+        
+        .Img_S_Cu {
+            grid-row: 2/3;
+            margin-top: 85vh;
+        }
+        
+        
+        
+        .P_Empresas {
+           
+            background-color:$color-descripcion;
+            text-align: center;
+            width: 96vh;
+            height: 14vh;
+            border: 2px solid black;
+            margin-top: 2vh;
+        }
+        
+        
+        .Img_S_Ci {
+            grid-column: 1/4;;
+            
+        }
+        
+        .Img_Sol_Ci {
+            
+            margin-top: 20vh;
+            object-fit: cover;
+            height: 71vh;
+            width: 55vh;
+        
+        }
+        .P_Ej{
+            background-color:$color-descripcion;
+            height: 15vh;
+            width: 56vh;
+            font-size: 2vh;
+            margin-top: 2vh;
+            text-align: center;
+            border: 2px solid black;
+        }
+        .Parrafo_G{
+            grid-column: 1/4;
+            background-color: $color-descripcion;
+            width:105vh;
+            margin-top: 50vh;
+            text-align: center;
+            border: 2px solid black;
+        }
+ 
+    }
+    section{
+        .Descrip_S_U{
+            background-color: $color-descripcion;
+            text-align: center;
+            width: 100vh;
+            height: 5vh;
+        }
+        .Descrip_S_T{
+            background-color:$color-descripcion;
+            text-align: center;
+            width: 100vh;
+            height: 12vh;
+        }
+        .Descrip_S_D{
+            background-color:$color-descripcion ;
+            text-align: center;
+            width: 100vh;
+            height: 5vh;
+        }
+
+    }
+    
+   
+.Footer_E {
+    margin-top: 15vh;
+    text-align: center;
+    width: 105vh;
+    height: 5vh;
+    background-color: $color-descripcion;
+ 
+   
+}
+
+}
+
+
+
+       /*estilos soluciones para desktop*/
+       @media screen and (min-width: 1024px){
+        main {
+
+            width: 215vh;
+            height: 385vh;
+            .Descripcion_Imgs_S {
+            
+                width: 10vh;
+                padding: 1rem;
+                margin-top: 5vh;
+                display: grid;
+                grid-template-columns: 125vh ;
+                grid-template-rows: 90vh 60vh 110vh 50vh;
+                grid-gap: 1rem;
+               
+        
+            }
+                
+            .Img_S_Un {
+                display: grid;
+                grid-row:1/2;
+                background-color: tomato;
+                display: block; 
+                height: 70vh;
+                width: 120vh;
+            }
+        
+            .Img_Sol{
+                object-fit: cover;
+                height: 60vh;
+            }
+            .P_Co{
+                text-align: center;
+                width: 115vh;
+                font-size: 4vh;
+                height:16vh;
+              
+            
+            }
+            
+            .Img_S_D {
+                grid-row: 1/3;
+                height: 10vh;
+            }
+            
+            .P_Em {
+            
+                margin-top: 2vh;
+                background-color: #005954;
+                text-align: center;
+                width: 56vh;
+                height: 18vh;
+                border: 2px solid black;
+            
+            }
+            
+            .Img_Sol_U {
+                
+                object-fit: cover;
+                margin-top: 33vh;
+                grid-column: 1/4;
+            
+            }
+            .Img_S_T{
+                grid-column: 2/3;
+                height: 30vh;
+            }
+            .Img_Sol_T {
+               
+                margin-top: 20vh;
+                object-fit: cover;
+                height: 60vh;
+            }
+            
+           
+            
+            .Img_S_Cu {
+                grid-row: 2/3;
+                margin-top: 18vh;
+            }
+            .Img_Sol_Cu {
+                height: 60vh;
+            }
+            
+            .P_Empresas {
+               
+                background-color: #005954;
+                text-align: center;
+                width: 118vh;
+                height: 14vh;
+                border: 2px solid black;
+                margin-top: 2vh;
+            }
+            
+            
+            .Img_S_Ci {
+                grid-column: 1/4;;
+                
+            }
+            
+            .Img_Sol_Ci {
+                
+                margin-top: 2vh;
+                object-fit: cover;
+                height: 81vh;
+                width: 135vh;
+           
+            }
+            .P_Ej{
+                background-color: #226360;
+                height: 10vh;
+                width: 198vh;
+                font-size: 3vh;
+                margin-top: 2vh;
+                text-align: center;
+                border: 2px solid black;
+            }
+            .Parrafo_G{
+                grid-column: 1/4;
+                background-color: #005954;
+                width:198vh;
+                text-align: center;
+                border: 2px solid black;
+            }
+
+
+        }
+        
+        
+    .Descrip_S_U{
+      
+        text-align: center;
+        width: 205vh;
+        height: 5vh;
+    }
+    .Descrip_S_T{
+        text-align: center;
+        text-align: center;
+        width: 205vh;
+        height: 5vh;
+    }
+    .Descrip_S_D{
+        
+        text-align: center;
+        width: 205vh;
+        height: 5vh;
+    }
+    
+    .Footer_E {
+        margin-top: 15vh;
+        text-align: center;
+        width: 215vh;
+        height: 5vh;
+        background-color: #054E3B;
+        color: rgb(247, 247, 247);
+        box-shadow: 7px 0px 50px rgb(19, 18, 18);
+    }
+
+    }

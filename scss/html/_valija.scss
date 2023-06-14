@@ -1,0 +1,604 @@
+//import
+
+@import "../utilidades/vars";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+
+
+body{
+    background-color: $color-body;
+}
+
+
+/*estilos pagina arma tu valija*/
+/*CELULARES*/
+body {
+    background-color: #a5b7b68b;
+
+}
+
+
+
+.logo_img {
+    
+    object-fit: cover;
+    width: 44vh;
+    height: 30vh;
+}
+
+
+
+.Contenedor_Valija{
+      
+    gap: 1vh;
+    display: grid;
+    grid-template-columns: repeat(3/ 1fr);
+    grid-template-rows: repeat(3/ 1fr);
+} 
+
+
+
+.Texto_Titulo {
+
+    margin-top: 10vh;
+    text-align: center;
+    width: 53vh;
+    height: 12vh;
+    background-color: #005954;
+
+
+}
+
+
+.Img_Uno_V {
+   margin-top: 60vh;
+   margin-left: 1vh;
+    width: 50vh;
+    height: 45vh;
+}
+
+.Text_V_Uno {
+
+    margin: 4vh 2vh;
+    width: 49vh;
+    height: 15vh;
+    text-align: center;
+    border: 2px solid black;
+
+}
+
+.Text_V_Dos {
+    display: none;
+}
+
+.Text_V_Tres {
+    margin: 2vh 1vh;
+    height: 30vh;
+    width: 50vh;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.Text_V_Cuatro {
+    display: none;
+
+}
+
+.Img_Dos_V {
+    display: none;
+
+}
+
+.Img_Tres_V {
+    object-fit: cover;
+    height: 58vh;
+    width: 50vh;
+
+}
+
+.Img_Cuatro_V {
+    object-fit: cover;
+    height: 34vh;
+    width: 50vh;
+    margin-top: 10vh;
+
+}
+.Text_F{
+    display: none;
+}
+
+.Section_Haa {
+    object-fit: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 55vh;
+    text-align: center;
+    margin-top: 78vh;
+
+}
+
+.Section_Hba {
+    text-align: center;
+    height: 48px;
+    width: 45vh;
+    font-size: 25px;
+    height: 32px;
+    width: 51vh;
+    margin-top: 2vh;
+    text-align: center;
+    background-color: $color-descripcion;
+
+
+}
+
+.Section_Hca {
+    background-color: $color-descripcion;
+    height: 98px;
+    width: 51vh;
+    margin-top: 2vh;
+    text-align: center;
+
+}
+.Footer_Ba{
+    background-color:$color-descripcion;
+    text-align: center;
+    width: 2vh,
+}
+/*estilos valiajas*/
+/*tablets*/
+
+@media screen and (min-width:600px){
+
+    body {
+        background-color: #a5b7b68b;
+       
+    }
+
+    header {
+
+        height: 5vh;
+    
+     
+    }
+
+    .Texto_Titulo {
+
+        margin-top: 0vh;
+        text-align: center;
+        width: 85vh;
+        height: 10vh;
+        background-color: $color-descripcion;
+
+    }
+
+    .Contenedor_Valija{
+        margin-top: 12vh;
+        gap: 1vh;
+      
+    } 
+
+    .Img_Uno_V {
+       
+       
+        object-fit: cover;
+        width: 94vh;
+        height: 50vh;
+        margin-top: 30vh;
+       
+    }
+  
+    .Img_Tres_V{
+        object-fit: cover;
+        height: 84vh;
+        width: 95vh;
+        margin-top: 10vh;
+    }
+    .Img_Cuatro_V {
+        margin-top: 10vh;
+        
+      object-fit: cover;
+      width: 94vh;
+      height: 48vh;
+      background-color: $color-descripcion;
+     
+
+    }
+
+    .Text_V_Uno {
+        
+        width: 90vh;
+        height: 12vh;
+        text-align: center;
+        border: 2px solid black;
+
+    }
+
+    .Text_V_Tres {
+        background-color: #0b4a3a28;
+        margin-top: 5vh;
+        display: block;
+        height: 18vh;
+        width: 90vh;
+        text-align: center;
+        border: 2px solid black;
+     
+    }
+
+    .Section_Haa {
+        margin-top: 5vh;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 84vh;
+        text-align: center;
+
+    }
+
+    .Section_Hba {
+        text-align: center;
+        height: 48px;
+        width: 95vh;
+        font-size: 25px;
+
+
+    }
+
+    .Section_Hca {
+
+        height: 8vh;
+        width:95vh ;
+        text-align: center;
+
+    }
+
+    .Footer_B{
+        width:95vh;
+        background-color:$color-descripcion ;
+        text-align: center;
+        
+
+        }
+
+}
+
+
+/*estilos valija*/
+/*desktop*/
+@media screen and (min-width: 1024px) {
+
+    body {
+    
+        background-color: #a5b7b68b;
+       
+    }
+
+    header {
+
+        height: 5vh;
+    
+     
+    }
+
+    .Texto_Titulo {
+
+        margin-top: 10vh;
+        text-align: center;
+        width: 200vh;
+        height: 12vh;
+        background-color: $color-descripcion;
+
+    }
+
+    .Contenedor_Valija{
+        height: 10vh;
+        margin-top: 30vh;
+        gap: 1vh;
+        display: grid;
+        grid-template-columns: 100%, 100% ;
+        grid-template-rows:10% , 10%;
+    } 
+
+    .Img_Uno_V {
+        grid-column: span 2;
+        background-color: rgb(240, 144, 18);
+        object-fit: cover;
+        width: 200vh;
+        height: 80vh;
+        margin-top: 20vh;
+       
+    }
+    .Img_Dos_V {
+        grid-column:span 2 ;
+        margin-top:20vh;
+
+        background-color:$color-descripcion;
+        object-fit: cover;
+        display: block;
+        height: 80vh;
+        width: 200vh;
+
+    }
+
+    .Img_Tres_V {
+       
+         
+       grid-row:2 ;
+        object-fit: cover;
+        width: 72vh;
+        height: 80vh;
+        margin-top: 20vh;
+       
+    }
+
+    .Img_Cuatro_V {
+        grid-row: 2;
+        margin-top: 20vh;
+      object-fit: cover;
+      width: 120vh;
+      height: 80vh;
+    
+     
+
+    }
+
+    .Img_Valija_Img,
+    .Img_Valija_Tres,
+    .Img_Valija_Uno {
+        display: block;
+    }
+
+
+
+
+
+    .Text_V_Uno {
+        
+        width: 120vh;
+        height: 10vh;
+        text-align: center;
+        border: 2px solid black;
+
+    }
+
+    .Text_V_Dos {
+        margin-top: 5vh;
+        display: block;
+        width: 60vh;
+        height: 8vh;
+        text-align: center;
+        border: 2px solid black;
+       
+     
+    }
+
+    .Text_V_Tres {
+        display: none;
+     
+    }
+
+
+
+    .Infor {
+
+        height: 20vh;
+    }
+
+
+    .Section_Haa {
+        margin-top: 5vh;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 203vh;
+        text-align: center;
+
+    }
+
+    .Section_Hba {
+        text-align: center;
+        height: 48px;
+        width: 203vh;
+        font-size: 25px;
+
+
+    }
+
+    .Section_Hca {
+
+        height: 45px;
+        width: 203vh;
+        text-align: center;
+
+    }
+
+    .Footer_B{
+        width: 203vh;
+        background-color: $color-descripcion;
+        text-align: center;
+        
+
+        }
+
+ }
+ 
+@media screen and (min-width:600px){
+
+    body {
+            height: 20vh;
+        }
+    
+        .Parrafo_Ga {
+            margin-top: 25vh;
+            width: 106vh;
+            height: 20vh;
+            font-size: 3vh;
+            text-align: center;
+            border: 2px solid black;
+            background-color:$color-descripcion;
+        }
+    
+    
+        .Parrafo_Img_H {
+            object-fit: cover;
+            margin-top: 180vh;
+            height: 25vh;
+            width: 107vh;
+        }
+    
+        .Parrafo_Img_I {
+            display: block;
+            object-fit: cover;
+            height: 55VH;
+            margin-top: 8vh;
+       
+    
+        }
+    
+        .P_H {
+            background-color: $color-descripcion;
+            width: 100vh;
+            margin-left: 1vh;
+            margin-top: 6vh;
+            font-size: 2vh;
+            text-align: center;
+            border: 2px solid black;
+        }
+    
+        .P_H_Uno {
+            background-color: $color-descripcion;
+            width: 105vh;
+            margin-left: 1vh;
+            margin-top: 5vh;
+            text-align: center;
+            border: 2px solid black;
+        }
+    
+        .Infor_Eq {
+    
+            margin-top: 100vh;
+            height: 20vh;
+            width: 52vh;
+            text-align: center;
+        }
+    
+        .Img_On {
+            object-fit: cover;
+            height: 80vh;
+            margin-top: 5vh;
+        }
+    
+        .section_haeq {
+            margin-top: 130vh;
+            width: 107vh;
+            background-color: $color-descripcion;
+        }
+    
+        .section_hbeq {
+            width: 107vh;
+            background-color: $color-descripcion;
+        }
+    
+        .section_hceq {
+            width: 107vh;
+            background-color:$color-descripcion;
+        }
+    
+        .footer_eq {
+            margin-top:5vh;
+            text-align: center;
+            color: rgb(247, 247, 247);
+            height: 35px;
+            width: 107vh;
+            background-color: $color-descripcion;
+            box-shadow: 7px 0px 50px rgb(19, 18, 18);
+    
+        }
+    
+        
+    }
+    
+    /*estilos equipos de trabajo*/
+    /*DESKTOP*/
+    
+    @media screen and (min-width: 1024px) {
+        body {
+            height: 420vh;
+        }
+    
+        .Parrafo_Ga {
+            margin-top: 55vh;
+            width: 190vh;
+            height: 10vh;
+            font-size: 3vh;
+            text-align: center;
+            border: 2px solid black;
+            background-color: $color-descripcion;
+        }
+    
+    
+        .Parrafo_Img_H {
+            object-fit: cover;
+            height: 110vh;
+            width: 160vh;
+        }
+    
+        .Parrafo_Img_I {
+            display: block;
+            object-fit: cover;
+            height: 70VH;
+            margin-top: 8vh;
+            margin-left: 80vh;
+    
+        }
+    
+        .P_H {
+         
+            width: 150vh;
+            margin-left: 18vh;
+            margin-top: 10vh;
+            font-size: 2vh;
+            text-align: center;
+          
+        }
+    
+        .P_H_Uno {
+     
+            background-color: $color-descripcion;
+            width: 190vh;
+            margin-left: 1vh;
+            margin-top: 5vh;
+            text-align: center;
+            border: 2px solid black;
+        }
+    
+        .Img_On {
+            object-fit: cover;
+            height: 90vh;
+        }
+    
+        .section_haeq {
+            margin-top: 130vh;
+            width: 198vh;
+            background-color: $color-descripcion;
+        }
+    
+        .section_hbeq {
+            width: 198vh;
+            background-color:$color-descripcion;
+        }
+    
+        .section_hceq {
+            width: 198vh;
+            background-color:$color-descripcion;
+        }
+    
+        .footer_eq {
+            margin-top: 160vh;
+            text-align: center;
+            color: rgb(247, 247, 247);
+            height: 35px;
+            width: 202vh;
+            background-color:$color-descripcion;
+            box-shadow: 7px 0px 50px rgb(19, 18, 18);
+    
+        }
+    
+    }
+    
+    

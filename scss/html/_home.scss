@@ -1,0 +1,458 @@
+//import
+
+@import "../utilidades/vars";
+@import "../utilidades/mixin";
+
+
+body{
+    background-color: $color-body;
+}
+/*HOME*/
+/* ESTILOS CELULARES*/
+header {
+
+
+   .Contenedor_Logo {
+
+    width: 75vh;
+    height: 205vh;
+} 
+
+}
+
+main{
+
+
+    .Descripcion_Img {
+        display: grid;
+        grid-template-columns: repeat(2, 120%);
+        grid-template-rows: repeat(3, 125%);
+        height: 218vh;
+    }
+    
+    .Lorem_Index {
+        text-align: center;
+        margin-top: 2vh;
+        border: 2px solid black;
+        height: 17vh;
+        width: 50vh;
+        background-color:$color-descripcion;
+        color: #fdecda;
+    }
+    
+    .Home_P {
+        margin-top: 15vh;
+        width: 50vh;
+        height: 20vh;
+        background-color: $color-descripcion;
+        color: whitesmoke;
+        border: 2px solid black;
+    }
+    
+    .Img_Uno_A {
+        grid-column: 1;
+        background-color: aliceblue;
+        height: 30vh;
+        width: 40vh;
+        margin-top: 20vh;
+    
+    }
+    
+    .Img_Dos_B {
+        grid-row: 1/4;
+        width: 50vh;
+        height: 35vh;
+        margin-top: 5vh;
+    }
+
+    .Img_Tres_C{
+        width: 40vh;
+        margin-top: 7vh ;
+        margin-left: 3vh;
+    }
+    
+    .Descripcion_Img .Img_Tres,
+    .Img_Cuatro,
+    .Img_Cinco,
+    .Img_Seis,
+    .Img_Siete {
+        display: none;
+    }
+    
+    
+
+}
+
+section{
+
+    .Descrip_Section_Uno_H {
+        background-color: $color-descripcion;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.5rem;
+        height: 25px;
+        width: 55vh;
+        text-align: center;
+        margin-top: 20px;
+    
+    }
+    
+    .Descrip_Section_Dos_H {
+    
+        background-color: rgb(202, 196, 207);
+        text-align: center;
+        font-size: 1rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        height: 5vh;
+        width: 60vh;
+        color: rgb(9, 78, 36);
+    
+    }
+    
+    .Descrip_Section_Tres_H {
+        background-color: $color-section-tres;
+        text-align: center;
+        height: 5vh;
+        width: 60vh;
+        font-size: 15px;
+        margin: 5px;
+    
+    }
+ }
+
+
+.Footer{
+    background-color: $color-descripcion;
+    text-align: center;
+}
+
+/*estilos tablet home*/
+
+
+@media screen and (min-width:600px){
+    body{
+        background-color: $color-body;
+    }
+    header {
+
+        width: 10vh;
+        height:110vh;
+       
+        .Contenedor_Logo {
+        object-fit: cover;
+        margin: 10px;
+        height: 150vh;
+    }
+    
+    .Desc {
+        font-size: 2vh;
+        height: 95vh;
+        text-align: center;
+        color: #005954;
+        border: 1px solid black;
+
+    }
+
+    .Descrip_Section_Uno_H {
+        background-color: #1fd5cc;
+        color: whitesmoke;
+        font-size: 2rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        align-content: center;
+        height: 40px;
+        width: 80vh;
+        text-align: center;
+    }
+
+    .Descrip_Section_Dos_H {
+        background-color: #5dc1b9;
+        color: whitesmoke;
+        height: 30px;
+        width: 80vh;
+        height: 20px;
+        text-align: center;
+    }
+
+    .Descrip_Section_Tres_H {
+        color: whitesmoke;
+        background-color: #6ca3a0;
+        font-size: 1rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width:80vh;
+        height: 40px;
+    }
+
+
+ 
+    }
+
+    main{
+        .Descripcion_Img {
+           
+            display: grid;
+            grid-template-columns: repeat(1, 120%);
+            grid-template-rows: repeat(3, 175%);
+            height: 118vh;
+        }
+        
+        .Lorem_Index {
+            text-align: center;
+            margin-top: 3vh;
+            border: 2px solid black;
+            height: 12vh;
+            width: 80vh;
+            background-color:$color-descripcion;
+            color: #fdecda;
+        }
+        .Img_Cuatro_D{
+            height: 59vh;
+            margin-left: 2vh;
+            margin-top: 1vh;
+        }
+        .Img_Cinco{
+            display: none;
+        }
+     
+        .Desc{
+            text-align: center;
+            margin-top: 3vh;
+            border: 2px solid black;
+            height: 15vh;
+            width: 80vh;
+            background-color:$color-descripcion;
+            color: #fdecda; 
+        }
+        
+        .Home_P {
+            margin-top: 5vh;
+            width: 80vh;
+            height: 10vh;
+            background-color: $color-descripcion;
+            color: whitesmoke;
+            border: 2px solid black;
+        }
+        
+        .Img_Uno_A {
+            grid-column: 1;
+            object-fit: cover;
+            background-color: aliceblue;
+            height: 60vh;
+            width: 80vh;
+            margin-top: 40vh;
+        
+        }
+        
+        .Img_Dos_B {
+            grid-row: 1/4;
+            width: 50vh;
+            height: 35vh;
+            margin-top: 5vh;
+        }
+    
+        .Img_Tres_C{
+            margin-top: 10vh;
+            width: 30vh;
+            margin-top: 7vh ;
+            margin-left: 3vh;
+        }
+        .Img_Seis_F{
+            object-fit: cover;
+            height: 62vh;
+        }
+        
+        .Descripcion_Img .Img_Tres,
+        .Img_Cuatro,
+        .Img_Seis,
+        .Img_Siete {
+            display: block;
+        }
+
+    }
+
+    section{
+
+
+        .Desc {
+            font-size: 2vh;
+            height: 95vh;
+            text-align: center;
+            color: #005954;
+            border: 1px solid black;
+    
+        }
+    
+        .Descrip_Section_Uno_H {
+            background-color:$color-descripcion;
+            color: whitesmoke;
+            font-size: 2rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            align-content: center;
+            height: 40px;
+            width: 89vh;
+            text-align: center;
+        }
+    
+        .Descrip_Section_Dos_H {
+            background-color:$color-section-dos;
+            color: whitesmoke;
+            height: 30px;
+            width: 89vh;
+            height: 20px;
+            text-align: center;
+        }
+    
+        .Descrip_Section_Tres_H {
+            color: rgb(29, 28, 28);
+            background-color:$color-section-tres;
+            font-size: 1rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width:89vh;
+            height: 40px;
+        }
+    
+    
+
+    }
+
+
+  }
+    
+/*estilos para desktop*/
+/* home*/
+
+@media screen and (min-width: 1024px) {
+
+body{
+    background-color: $color-descripcion; }
+
+
+    
+    .Contenedor_Logo {
+        object-fit: cover;
+        width: 500vh;
+        
+        height: 100vh;
+    }
+    .logo_img{
+        width: 200vh;
+    }
+
+    .Lorem_Index {
+        display: none;
+    }
+
+
+
+
+main{
+
+    .Descripcion_Img {
+        margin-top: 1vh;
+        height: 25vh;
+        width: 100vh;
+        grid-template-columns: repeat(1, 3fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .Img_Uno,
+    .Img_Dos {
+        display: none;
+    }
+
+    .Img_Cuatro,
+    .Img_Seis {
+        display: block;
+    }
+
+    .Img_Cuatro {
+        object-fit: cover;
+        grid-row: 3;
+        height: 55vh;
+        width: 110vh;
+        display: flex;
+       
+    }
+
+    .Img_Cinco {
+        object-fit: cover;
+        grid-column: 1/2;
+        height: 128vh;
+        width: 20vh;
+        display: flex;
+        margin-top: 16vh;
+
+    }
+
+    .Img_Seis {
+        object-fit: cover;
+        display: flex;
+        margin-bottom: 10vh;
+        grid-row: 3/3;
+        height: 80vh;
+
+
+    }
+    .Img_Tres_C{
+display: none;
+    }
+
+
+
+
+
+
+
+}
+    .Footer {
+        background-color: #054E3B;
+        width: 218vh;
+        height: 4vh;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+    
+
+    .Desc {
+        font-size: 2vh;
+        height: 55vh;
+        text-align: center;
+        color: #005954;
+
+    }
+
+    .Descrip_Section_Uno_H {
+        background-color: #005954;
+        color: whitesmoke;
+        font-size: 2rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        align-content: center;
+        height: 40px;
+        width: 215vh;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .Descrip_Section_Dos_H {
+        background-color: #5dc1b9;
+        color: whitesmoke;
+        height: 30px;
+        width: 216vh;
+        height: 20px;
+        text-align: center;
+    }
+
+    .Descrip_Section_Tres_H {
+        color: whitesmoke;
+        background-color: #6ca3a0;
+        font-size: 1rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 216vh;
+        height: 30px;
+    }
+
+}
+
+
+
+  
