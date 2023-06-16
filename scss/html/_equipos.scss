@@ -2,7 +2,8 @@
 
 @import "../utilidades/vars";
 @import "../utilidades/mixin";
-body{
+
+body {
     background-color: $color-body;
 }
 
@@ -11,7 +12,7 @@ body{
 
 
 
-main{
+main {
     .Parrafo_Ga {
         margin-top: 35vh;
         width: 52vh;
@@ -27,6 +28,7 @@ main{
         width: 52vh;
         text-align: center;
     }
+
     .P_H_Uno {
         background-color: #005955b5;
         width: 50vh;
@@ -35,6 +37,7 @@ main{
         text-align: center;
         border: 2px solid black;
     }
+
     .Parrafo_Img_H {
         object-fit: cover;
         background-color: #005954;
@@ -42,6 +45,7 @@ main{
         height: 40VH;
         width: 50vh;
     }
+
     .P_H {
         background-color: #005955b5;
         width: 50vh;
@@ -50,152 +54,159 @@ main{
         text-align: center;
         border: 2px solid black;
     }
+
     .Parrafo_Img_I {
         display: none;
-    
-    }
-    
-.Img_On {
-    object-fit: cover;
-    height: 50vh;
-}
 
-.section_haeq {
-    background-color:$color-section-uno;
-}
-
-.section_hbeq {
-    background-color:$color-section-dos;
-}
-
-.section_hceq {
-    background-color: $color-section-tres;
-}
-
-}
-
-
-footer{
-.Footer_Eqa{
-    text-align: center;
-    color: rgb(247, 247, 247);
-    margin-top: 160vh;
-    height: 5vh;
-    width: 53vh;
-    background-color:$color-descripcion
-}
-
-
-}
-
-@media screen and (max-width:768px){
-
-    body {
-        background-color:$color-body;
-            height: 152vh;
-        }
-main{
-
-    .Parrafo_Ga {
-        margin-top: 20vh;
-        width:86vh;
-        height: 22vh;
-        font-size: 3vh;
-        text-align: center;
-        border: 2px solid black;
-        background-color:$color-descripcion;
-    }
-    .P_H_Uno {
-      
-        width: 82vh;
-        margin-left: 1vh;
-        margin-top: 10vh;
-        text-align: center;
-
-        border: 2px solid black;
     }
 
     .Img_On {
         object-fit: cover;
-        height: 67vh;
-        margin-top: 5vh;
-
+        height: 50vh;
     }
 
-    .P_H {
-        background-color: #104340b5;
-        width: 80vh;
-        margin-left: 1vh;
-        margin-top: 10vh;
-        font-size: 2vh;
-        text-align: center;
-        border: 2px solid black;
-    }
-    .Parrafo_Img_H {
-        object-fit: cover;
-        margin-top: 80vh;
-        
-}
-    
-    
-    .Parrafo_Img_I {
-        display: block;
-        object-fit: cover;
-        height: 48VH;
-        margin-top: 90vh;
-
-
-    }
-    .Infor_Eq {
-
-        margin-top: 10vh;
-        height: 2vh;
-        width: 52vh;
-        text-align: center;
-    }
-
-    
     .section_haeq {
-        margin-top: 10vh;
-        width: 85vh;
-        background-color:$color-descripcion;
+        background-color: $color-section-uno;
     }
 
     .section_hbeq {
-        width: 85vh;
-        background-color:$color-section-dos;
+        background-color: $color-section-dos;
     }
 
     .section_hceq {
-        width: 85vh;
-        background-color: $color-section-tres
+        background-color: $color-section-tres;
+    }
+
+}
+
+
+footer {
+    .Footer_Eqa {
+        text-align: center;
+        color: rgb(247, 247, 247);
+        margin-top: 160vh;
+        height: 5vh;
+        width: 53vh;
+        background-color: $color-descripcion
     }
 
 
 }
-    } 
-    footer{
-        .Footer_Eqa {
-            margin-top:2vh;
-            text-align: center;
-            color: rgb(247, 247, 247);
-            height: 35px;
-            width: 105vh;
-            background-color:$color-descripcion;
-            box-shadow: 7px 0px 50px rgb(19, 18, 18);
-    
-        }
+
+@media screen and (max-width:768px) {
+
+    body {
+        background-color: $color-body;
+        height: 152vh;
     }
 
-        
+    main {
+
+        .Parrafo_Ga {
+            margin-top: 20vh;
+            width: 86vh;
+            height: 22vh;
+            font-size: 3vh;
+            text-align: center;
+            border: 2px solid black;
+            background-color: $color-descripcion;
+        }
+
+        .P_H_Uno {
+
+            width: 82vh;
+            margin-left: 1vh;
+            margin-top: 10vh;
+            text-align: center;
+
+            border: 2px solid black;
+        }
+
+        .Img_On {
+            object-fit: cover;
+            height: 67vh;
+            margin-top: 5vh;
+
+        }
+
+        .P_H {
+            background-color: #104340b5;
+            width: 80vh;
+            margin-left: 1vh;
+            margin-top: 10vh;
+            font-size: 2vh;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        .Parrafo_Img_H {
+            object-fit: cover;
+            margin-top: 80vh;
+
+        }
+
+
+        .Parrafo_Img_I {
+            display: block;
+            object-fit: cover;
+            height: 48VH;
+            margin-top: 90vh;
+
+
+        }
+
+        .Infor_Eq {
+
+            margin-top: 10vh;
+            height: 2vh;
+            width: 52vh;
+            text-align: center;
+        }
+
+
+        .section_haeq {
+            margin-top: 10vh;
+            width: 85vh;
+            background-color: $color-descripcion;
+        }
+
+        .section_hbeq {
+            width: 85vh;
+            background-color: $color-section-dos;
+        }
+
+        .section_hceq {
+            width: 85vh;
+            background-color: $color-section-tres
+        }
+
+
+    }
+}
+
+footer {
+    .Footer_Eqa {
+        margin-top: 2vh;
+        text-align: center;
+        color: rgb(247, 247, 247);
+        height: 35px;
+        width: 105vh;
+        background-color: $color-descripcion;
+        box-shadow: 7px 0px 50px rgb(19, 18, 18);
+
+    }
+}
+
+
 /*estilos equipos de trabajo*/
 /*DESKTOP*/
 
 @media screen and (min-width: 1024px) {
     body {
         height: 220vh;
-    } 
-    main{
+    }
+
+    main {
 
 
         .Parrafo_Ga {
@@ -207,36 +218,36 @@ main{
             border: 2px solid black;
             background-color: #005954;
         }
-    
-    
+
+
         .Parrafo_Img_H {
             object-fit: cover;
             height: 110vh;
             width: 160vh;
             margin-top: 110vh;
         }
-    
+
         .Parrafo_Img_I {
             display: block;
             object-fit: cover;
             height: 70VH;
             margin-top: 150vh;
             margin-left: 80vh;
-    
+
         }
-    
+
         .P_H {
-         
+
             width: 150vh;
             margin-left: 18vh;
             margin-top: 10vh;
             font-size: 2vh;
             text-align: center;
-          
+
         }
-    
+
         .P_H_Uno {
-     
+
             background-color: #005955b5;
             width: 190vh;
             margin-left: 1vh;
@@ -244,43 +255,43 @@ main{
             text-align: center;
             border: 2px solid black;
         }
-    
+
         .Img_On {
             object-fit: cover;
             height: 90vh;
         }
-    
+
         .section_haeq {
             margin-top: 10vh;
             width: 198vh;
-            background-color:$color-descripcion;
+            background-color: $color-descripcion;
         }
-    
+
         .section_hbeq {
             width: 198vh;
-            background-color:$color-section-dos;
+            background-color: $color-section-dos;
         }
-    
+
         .section_hceq {
             width: 198vh;
             background-color: $color-section-tres;
         }
 
-        
+
     }
 
-    
-footer{
-    .Footer_Eq {
-        margin-top: 1vh;
-        text-align: center;
-        color: rgb(247, 247, 247);
-        height: 35px;
-        width: 210vh;
-        background-color: $color-descripcion;
+
+    footer {
+        .Footer_Eq {
+            margin-top: 1vh;
+            text-align: center;
+            color: rgb(247, 247, 247);
+            height: 35px;
+            width: 210vh;
+            background-color: $color-descripcion;
+        }
+
     }
+
 
 }
-   
-
-} 

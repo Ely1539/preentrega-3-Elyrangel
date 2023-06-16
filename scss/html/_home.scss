@@ -8,26 +8,27 @@
 /*HOME*/
 /* ESTILOS CELULARES*/
 
-body{
+body {
     background-color: $color-body;
     height: 30vh;
 }
+
 header {
-.logo_img{
-    margin-top: 6vh;
-    height: 10vh;
-    width: 15vh;
+    .logo_img {
+        margin-top: 6vh;
+        height: 10vh;
+        width: 15vh;
+    }
+
+    .Contenedor_Logo {
+
+        width: 35vh;
+        height: 15vh;
+    }
+
 }
 
-   .Contenedor_Logo {
-  
-    width: 35vh;
-    height: 15vh;
-} 
-
-}
-
-main{
+main {
     height: 05vh;
 
     .Descripcion_Img {
@@ -36,24 +37,24 @@ main{
         grid-template-rows: repeat(2, 10%);
         height: 10vh;
     }
-    
+
     .Lorem_Index {
-      
+
         grid-row: span 1;
         text-align: center;
         margin: 20vh 1vh;
         border: 2px solid black;
         height: 8vh;
         width: 24vh;
-        background-color:$color-descripcion;
+        background-color: $color-descripcion;
         color: #fdecda;
         font-size: 1vh;
     }
-    
+
     .Home_P {
-    
+
         grid-row: span 1;
-      
+
         background-color: #005954;
         margin-top: 1vh;
         width: 25vh;
@@ -64,18 +65,18 @@ main{
         color: whitesmoke;
         border: 2px solid black;
     }
-    
+
     .Img_Uno_A {
         object-fit: cover;
-       grid-row: span 1;
+        grid-row: span 1;
         background-color: rgb(233, 233, 233);
         height: 79vh;
         width: 25vh;
         margin-top: 42vh;
-     
-    
+
+
     }
-    
+
     .Img_Dos_B {
 
         grid-column: span 1;
@@ -85,19 +86,20 @@ main{
         margin-top: 30vh;
     }
 
-    .Img_Tres_C{
-    
+    .Img_Tres_C {
+
         display: none;
         background-color: aqua;
         width: 100vh;
-        margin-top: 7vh ;
+        margin-top: 7vh;
         margin-left: 3vh;
     }
-    .Img_Seis_F{
-       height: 19vh;
-       margin-top: 92vh;
+
+    .Img_Seis_F {
+        height: 19vh;
+        margin-top: 92vh;
     }
-    
+
     .Descripcion_Img .Img_Tres,
     .Img_Cuatro,
     .Img_Cinco,
@@ -105,12 +107,12 @@ main{
     .Img_Siete {
         display: none;
     }
-    
-    
+
+
 
 }
 
-section{
+section {
     .Descrip_Section_Uno_H {
         background-color: $color-descripcion;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -119,11 +121,11 @@ section{
         width: 25vh;
         text-align: center;
         margin-top: 60vh;
-    
+
     }
-    
+
     .Descrip_Section_Dos_H {
-    
+
         background-color: rgb(202, 196, 207);
         text-align: center;
         font-size: 1rem;
@@ -131,9 +133,9 @@ section{
         height: 5vh;
         width: 25vh;
         color: rgb(9, 78, 36);
-    
+
     }
-    
+
     .Descrip_Section_Tres_H {
         background-color: $color-section-tres;
         text-align: center;
@@ -141,59 +143,61 @@ section{
         width: 24vh;
         font-size: 10px;
         margin: 5px;
-    
+
     }
- }
-
-
-.Footer{ 
-    
-    font-size: 2vh;
-    .Footer_H{
-
-    background-color: $color-descripcion;
-    text-align: center;
-    width: 25vh;
-    height: 3vh;
-    font-size: 1px;
 }
- }
+
+
+.Footer {
+
+    font-size: 2vh;
+
+    .Footer_H {
+
+        background-color: $color-descripcion;
+        text-align: center;
+        width: 25vh;
+        height: 3vh;
+        font-size: 1px;
+    }
+}
 
 /*estilos tablet home*/
 
 
-@media screen and (min-width:600px){
-    body{
+@media screen and (min-width:600px) {
+    body {
         background-color: $color-body;
     }
+
     header {
-        .logo_img{
+        .logo_img {
             margin-top: 15vh;
             height: 30vh;
             width: 45vh;
         }
-        
+
         width: 100vh;
         height:10vh;
-       
+
         .Contenedor_Logo {
-        object-fit: cover;
-        margin: 10px;
-        height: 150vh;
-    }
-    
- 
+            object-fit: cover;
+            margin: 10px;
+            height: 150vh;
+        }
+
+
     }
 
-    main{
+    main {
         .Descripcion_Img {
-           
+
             display: grid;
             grid-template-columns: repeat(1, 10%);
             grid-template-rows: repeat(3, 15%);
             height: 230vh;
         }
-        
+
         .Lorem_Index {
             text-align: center;
             margin-top: 1vh;
@@ -201,33 +205,36 @@ section{
             height: 18vh;
             width: 25vh;
             font-size: 1.5vh;
-            background-color:$color-descripcion;
+            background-color: $color-descripcion;
             color: #fdecda;
         }
-        .Img_Cuatro_D{
+
+        .Img_Cuatro_D {
             height: 59vh;
             margin-left: 2vh;
             margin-top: 15vh;
         }
-        .Img_Cinco{
+
+        .Img_Cinco {
             display: block;
             width: 10vh;
         }
-        .Img_Seis_F{
+
+        .Img_Seis_F {
             height: 10vh;
             margin-top: 10vh;
         }
-     
-        .Desc{
+
+        .Desc {
             text-align: center;
             margin-top: 3vh;
             border: 2px solid black;
             height: 25vh;
             width: 80vh;
-            background-color:$color-descripcion;
-            color: #fdecda; 
+            background-color: $color-descripcion;
+            color: #fdecda;
         }
-        
+
         .Home_P {
             margin-top: 5vh;
             width: 80vh;
@@ -237,7 +244,7 @@ section{
             color: whitesmoke;
             border: 2px solid black;
         }
-        
+
         .Img_Uno_A {
             grid-column: 1;
             object-fit: cover;
@@ -245,29 +252,31 @@ section{
             height: 60vh;
             width: 80vh;
             margin-top: 40vh;
-        
+
         }
-        
+
         .Img_Dos_B {
-         display: none;
+            display: none;
         }
-    
-        .Img_Tres_C{
+
+        .Img_Tres_C {
             margin-top: 10vh;
             width: 30vh;
-            margin-top: 7vh ;
+            margin-top: 7vh;
             margin-left: 3vh;
         }
-        .Img_Cinco_E{
+
+        .Img_Cinco_E {
             object-fit: cover;
             height: 51vh;
             margin: 15vh, 1vh;
         }
-        .Img_Seis_F{
+
+        .Img_Seis_F {
             object-fit: cover;
             height: 62vh;
         }
-        
+
         .Descripcion_Img .Img_Tres,
         .Img_Cuatro,
         .Img_Seis,
@@ -276,7 +285,8 @@ section{
         }
 
     }
-    section{
+
+    section {
 
         .Desc {
             font-size: 2vh;
@@ -284,11 +294,11 @@ section{
             text-align: center;
             color: #005954;
             border: 1px solid black;
-    
+
         }
-    
+
         .Descrip_Section_Uno_H {
-            background-color:$color-descripcion;
+            background-color: $color-descripcion;
             color: whitesmoke;
             font-size: 2rem;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -298,61 +308,64 @@ section{
             text-align: center;
             margin-top: 1vh;
         }
-    
+
         .Descrip_Section_Dos_H {
-            background-color:$color-section-dos;
+            background-color: $color-section-dos;
             color: whitesmoke;
             height: 30px;
             width: 89vh;
             height: 20px;
             text-align: center;
         }
-    
+
         .Descrip_Section_Tres_H {
             color: rgb(29, 28, 28);
-            background-color:$color-section-tres;
+            background-color: $color-section-tres;
             font-size: 1rem;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            width:89vh;
+            width: 89vh;
             height: 40px;
         }
-    
-    
+
+
 
     }
-    .Footer{ 
-   
-        .Footer_H{
+
+    .Footer {
+
+        .Footer_H {
             background-color: $color-descripcion;
-        text-align: center;
-        width: 89vh;
-        height: 3vh;
-        font-size: 1px;
-           
+            text-align: center;
+            width: 89vh;
+            height: 3vh;
+            font-size: 1px;
+
         }
-       
+
     }
 
 
-  }
-    
+}
+
 /*estilos para desktop*/
 /* home*/
 
 @media screen and (min-width: 1024px) {
 
-body{
-    background-color: $color-descripcion; }
+    body {
+        background-color: $color-descripcion;
+    }
 
 
-    
+
     .Contenedor_Logo {
         object-fit: cover;
         width: 50vh;
-        
+
         height: 100vh;
     }
-    .logo_img{
+
+    .logo_img {
         width: 20vh;
     }
 
@@ -363,67 +376,69 @@ body{
 
 
 
-main{
+    main {
 
-    .Descripcion_Img {
-        margin-top: 1vh;
-        height: 25vh;
-        width: 100vh;
-        grid-template-columns: repeat(2, 3fr);
-        grid-template-rows: repeat(1, 1fr);
+        .Descripcion_Img {
+            margin-top: 1vh;
+            height: 25vh;
+            width: 100vh;
+            grid-template-columns: repeat(2, 3fr);
+            grid-template-rows: repeat(1, 1fr);
+        }
+
+        .Img_Uno,
+        .Img_Dos {
+            display: none;
+        }
+
+        .Img_Cuatro,
+        .Img_Seis {
+            display: block;
+        }
+
+        .Img_Cuatro_D {
+            object-fit: cover;
+            grid-row: 3;
+            height: 15vh;
+            width: 200vh;
+            display: flex;
+            margin-top: 40VH;
+
+        }
+
+        .Img_Cinco_E {
+            object-fit: cover;
+            grid-column: 1/2;
+            height: 158vh;
+            width: 200vh;
+            display: flex;
+            margin-top: 80vh;
+
+        }
+
+        .Img_Seis_F {
+            object-fit: cover;
+            display: flex;
+            margin-bottom: 1vh;
+            grid-row: 1;
+            height: 65vh;
+            width: 190vh;
+
+
+        }
+
+        .Img_Tres_C {
+            display: none;
+        }
+
+
+
+
+
+
+
     }
 
-    .Img_Uno,
-    .Img_Dos {
-        display: none;
-    }
-
-    .Img_Cuatro,
-    .Img_Seis {
-        display: block;
-    }
-
-    .Img_Cuatro_D {
-        object-fit: cover;
-        grid-row: 3;
-        height: 15vh;
-        width: 200vh;
-        display: flex;
-        margin-top: 40VH;
-       
-    }
-
-    .Img_Cinco_E {
-        object-fit: cover;
-        grid-column: 1/2;
-        height: 158vh;
-        width: 200vh;
-        display: flex;
-        margin-top: 80vh;
-
-    }
-
-    .Img_Seis_F {
-        object-fit: cover;
-        display: flex;
-        margin-bottom: 1vh;
-        grid-row: 1;
-        height: 65vh;
-        width: 190vh;
-
-
-    }
-    .Img_Tres_C{
-display: none;
-    }
-
-
-
-
-
-
-
-}
     .Footer {
         background-color: #054E3B;
         width: 205vh;
@@ -433,15 +448,16 @@ display: none;
     }
 
 
-    
+
 
     .Desc {
-        font-size: 2vh; 
+        font-size: 2vh;
         text-align: center;
         color: #005954;
 
     }
-    section{
+
+    section {
 
         .Descrip_Section_Uno_H {
             background-color: #005954;
@@ -453,7 +469,7 @@ display: none;
             width: 205vh;
             text-align: center;
         }
-    
+
         .Descrip_Section_Dos_H {
             background-color: #5dc1b9;
             color: whitesmoke;
@@ -462,7 +478,7 @@ display: none;
             height: 20px;
             text-align: center;
         }
-    
+
         .Descrip_Section_Tres_H {
             color: whitesmoke;
             background-color: #6ca3a0;
@@ -477,7 +493,3 @@ display: none;
 
 
 }
-
-
-
-  

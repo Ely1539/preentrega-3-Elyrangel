@@ -3,42 +3,44 @@
 //mixin con parametros
 
 
-@mixin medidas ($width, $height ){
+@mixin medidas ($width, $height ) {
     width: $width;
-    height:$height;
-    
-  
+    height: $height;
+
+
 
 
 
 }
+
 //mixin sin parametros
 
-@mixin redes{
+@mixin redes {
     object-fit: cover;
     margin-top: 10vh;
     display: flex;
     height: 1vh;
     width: 1vh;
 }
-@mixin redes-a{
+
+@mixin redes-a {
 
     display: flex;
     margin-left: 8vh;
     height: 5vh;
     width: 1vh;
 }
-@mixin redes-tablet{
+
+@mixin redes-tablet {
     object-fit: cover;
     margin-top: 20vh;
     display: flex;
-    height: 1vh; 
+    height: 1vh;
 }
-@mixin redes-b{
+
+@mixin redes-b {
     display: flex;
-        margin-left: 15vh;
-        height: 10vh;
-        width: 20vh;
+    margin-left: 15vh;
+    height: 10vh;
+    width: 20vh;
 }
-
-

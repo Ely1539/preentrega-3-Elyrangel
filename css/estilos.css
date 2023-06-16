@@ -1290,7 +1290,7 @@ footer .Footer_B {
     gap: 1vh;
     display: grid;
     grid-template-columns: 100%, 100%;
-    grid-template-rows: 10% , 10%; }
+    grid-template-rows: 10%, 10%; }
   main .Img_Uno_V {
     grid-column: span 2;
     background-color: #f09012;
