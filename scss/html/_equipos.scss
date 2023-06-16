@@ -75,18 +75,20 @@ main{
 }
 
 
-
-.Footer_Eq {
+footer{
+.Footer_Eqa{
     text-align: center;
     color: rgb(247, 247, 247);
-    height: 35px;
+    margin-top: 160vh;
+    height: 5vh;
     width: 53vh;
     background-color:$color-descripcion
- 
+}
+
 
 }
 
-@media screen and (min-width:600px){
+@media screen and (max-width:768px){
 
     body {
         background-color:$color-body;
@@ -95,7 +97,7 @@ main{
 main{
 
     .Parrafo_Ga {
-        margin-top: 15vh;
+        margin-top: 20vh;
         width:86vh;
         height: 22vh;
         font-size: 3vh;
@@ -172,17 +174,20 @@ main{
 
 }
     } 
-
-        .Footer_Eq {
-            margin-top:15vh;
+    footer{
+        .Footer_Eqa {
+            margin-top:2vh;
             text-align: center;
             color: rgb(247, 247, 247);
             height: 35px;
-            width: 85vh;
+            width: 105vh;
             background-color:$color-descripcion;
             box-shadow: 7px 0px 50px rgb(19, 18, 18);
     
         }
+    }
+
+        
 /*estilos equipos de trabajo*/
 /*DESKTOP*/
 
@@ -194,7 +199,7 @@ main{
 
 
         .Parrafo_Ga {
-            margin-top: 3vh;
+            margin-top: 30vh;
             width: 190vh;
             height: 10vh;
             font-size: 3vh;
@@ -265,16 +270,17 @@ main{
     }
 
     
-
+footer{
     .Footer_Eq {
-        margin-top: 340vh;
+        margin-top: 1vh;
         text-align: center;
         color: rgb(247, 247, 247);
         height: 35px;
-        width: 202vh;
+        width: 210vh;
         background-color: $color-descripcion;
-       
-
     }
+
+}
+   
 
 } 

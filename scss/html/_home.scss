@@ -4,71 +4,98 @@
 @import "../utilidades/mixin";
 
 
-body{
-    background-color: $color-body;
-}
+
 /*HOME*/
 /* ESTILOS CELULARES*/
-header {
 
+body{
+    background-color: $color-body;
+    height: 30vh;
+}
+header {
+.logo_img{
+    margin-top: 6vh;
+    height: 10vh;
+    width: 15vh;
+}
 
    .Contenedor_Logo {
-
-    width: 75vh;
-    height: 205vh;
+  
+    width: 35vh;
+    height: 15vh;
 } 
 
 }
 
 main{
-
+    height: 05vh;
 
     .Descripcion_Img {
         display: grid;
-        grid-template-columns: repeat(2, 120%);
-        grid-template-rows: repeat(3, 125%);
-        height: 218vh;
+        grid-template-columns: repeat(1, 15%);
+        grid-template-rows: repeat(2, 10%);
+        height: 10vh;
     }
     
     .Lorem_Index {
+      
+        grid-row: span 1;
         text-align: center;
-        margin-top: 2vh;
+        margin: 20vh 1vh;
         border: 2px solid black;
-        height: 17vh;
-        width: 50vh;
+        height: 8vh;
+        width: 24vh;
         background-color:$color-descripcion;
         color: #fdecda;
+        font-size: 1vh;
     }
     
     .Home_P {
-        margin-top: 15vh;
-        width: 50vh;
-        height: 20vh;
+    
+        grid-row: span 1;
+      
+        background-color: #005954;
+        margin-top: 1vh;
+        width: 25vh;
+        height: 10vh;
+        font-size: 1vh;
+        text-align: center;
         background-color: $color-descripcion;
         color: whitesmoke;
         border: 2px solid black;
     }
     
     .Img_Uno_A {
-        grid-column: 1;
-        background-color: aliceblue;
-        height: 30vh;
-        width: 40vh;
-        margin-top: 20vh;
+        object-fit: cover;
+       grid-row: span 1;
+        background-color: rgb(233, 233, 233);
+        height: 79vh;
+        width: 25vh;
+        margin-top: 42vh;
+     
     
     }
     
     .Img_Dos_B {
-        grid-row: 1/4;
-        width: 50vh;
-        height: 35vh;
-        margin-top: 5vh;
+
+        grid-column: span 1;
+        background-color: #bed606;
+        width: 25vh;
+        height: 15vh;
+        margin-top: 30vh;
     }
 
     .Img_Tres_C{
-        width: 40vh;
+    
+        display: none;
+        background-color: aqua;
+        width: 100vh;
         margin-top: 7vh ;
         margin-left: 3vh;
+    }
+    .Img_Seis_F{
+       height: 19vh;
+       margin-top: 92vh;
     }
     
     .Descripcion_Img .Img_Tres,
@@ -84,15 +111,14 @@ main{
 }
 
 section{
-
     .Descrip_Section_Uno_H {
         background-color: $color-descripcion;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 1.5rem;
-        height: 25px;
-        width: 55vh;
+        font-size: 2VH;
+        height: 5vh;
+        width: 25vh;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 60vh;
     
     }
     
@@ -103,7 +129,7 @@ section{
         font-size: 1rem;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         height: 5vh;
-        width: 60vh;
+        width: 25vh;
         color: rgb(9, 78, 36);
     
     }
@@ -112,18 +138,26 @@ section{
         background-color: $color-section-tres;
         text-align: center;
         height: 5vh;
-        width: 60vh;
-        font-size: 15px;
+        width: 24vh;
+        font-size: 10px;
         margin: 5px;
     
     }
  }
 
 
-.Footer{
+.Footer{ 
+    
+    font-size: 2vh;
+    .Footer_H{
+
     background-color: $color-descripcion;
     text-align: center;
+    width: 25vh;
+    height: 3vh;
+    font-size: 1px;
 }
+ }
 
 /*estilos tablet home*/
 
@@ -133,9 +167,14 @@ section{
         background-color: $color-body;
     }
     header {
-
-        width: 10vh;
-        height:110vh;
+        .logo_img{
+            margin-top: 15vh;
+            height: 30vh;
+            width: 45vh;
+        }
+        
+        width: 100vh;
+        height:10vh;
        
         .Contenedor_Logo {
         object-fit: cover;
@@ -143,45 +182,6 @@ section{
         height: 150vh;
     }
     
-    .Desc {
-        font-size: 2vh;
-        height: 95vh;
-        text-align: center;
-        color: #005954;
-        border: 1px solid black;
-
-    }
-
-    .Descrip_Section_Uno_H {
-        background-color: #1fd5cc;
-        color: whitesmoke;
-        font-size: 2rem;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        align-content: center;
-        height: 40px;
-        width: 80vh;
-        text-align: center;
-    }
-
-    .Descrip_Section_Dos_H {
-        background-color: #5dc1b9;
-        color: whitesmoke;
-        height: 30px;
-        width: 80vh;
-        height: 20px;
-        text-align: center;
-    }
-
-    .Descrip_Section_Tres_H {
-        color: whitesmoke;
-        background-color: #6ca3a0;
-        font-size: 1rem;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        width:80vh;
-        height: 40px;
-    }
-
-
  
     }
 
@@ -189,34 +189,40 @@ section{
         .Descripcion_Img {
            
             display: grid;
-            grid-template-columns: repeat(1, 120%);
-            grid-template-rows: repeat(3, 175%);
-            height: 118vh;
+            grid-template-columns: repeat(1, 10%);
+            grid-template-rows: repeat(3, 15%);
+            height: 230vh;
         }
         
         .Lorem_Index {
             text-align: center;
-            margin-top: 3vh;
+            margin-top: 1vh;
             border: 2px solid black;
-            height: 12vh;
-            width: 80vh;
+            height: 18vh;
+            width: 25vh;
+            font-size: 1.5vh;
             background-color:$color-descripcion;
             color: #fdecda;
         }
         .Img_Cuatro_D{
             height: 59vh;
             margin-left: 2vh;
-            margin-top: 1vh;
+            margin-top: 15vh;
         }
         .Img_Cinco{
-            display: none;
+            display: block;
+            width: 10vh;
+        }
+        .Img_Seis_F{
+            height: 10vh;
+            margin-top: 10vh;
         }
      
         .Desc{
             text-align: center;
             margin-top: 3vh;
             border: 2px solid black;
-            height: 15vh;
+            height: 25vh;
             width: 80vh;
             background-color:$color-descripcion;
             color: #fdecda; 
@@ -226,6 +232,7 @@ section{
             margin-top: 5vh;
             width: 80vh;
             height: 10vh;
+            font-size: 1.5vh;
             background-color: $color-descripcion;
             color: whitesmoke;
             border: 2px solid black;
@@ -242,10 +249,7 @@ section{
         }
         
         .Img_Dos_B {
-            grid-row: 1/4;
-            width: 50vh;
-            height: 35vh;
-            margin-top: 5vh;
+         display: none;
         }
     
         .Img_Tres_C{
@@ -253,6 +257,11 @@ section{
             width: 30vh;
             margin-top: 7vh ;
             margin-left: 3vh;
+        }
+        .Img_Cinco_E{
+            object-fit: cover;
+            height: 51vh;
+            margin: 15vh, 1vh;
         }
         .Img_Seis_F{
             object-fit: cover;
@@ -267,9 +276,7 @@ section{
         }
 
     }
-
     section{
-
 
         .Desc {
             font-size: 2vh;
@@ -289,6 +296,7 @@ section{
             height: 40px;
             width: 89vh;
             text-align: center;
+            margin-top: 1vh;
         }
     
         .Descrip_Section_Dos_H {
@@ -311,6 +319,18 @@ section{
     
     
 
+    }
+    .Footer{ 
+   
+        .Footer_H{
+            background-color: $color-descripcion;
+        text-align: center;
+        width: 89vh;
+        height: 3vh;
+        font-size: 1px;
+           
+        }
+       
     }
 
 
@@ -349,7 +369,7 @@ main{
         margin-top: 1vh;
         height: 25vh;
         width: 100vh;
-        grid-template-columns: repeat(1, 3fr);
+        grid-template-columns: repeat(2, 3fr);
         grid-template-rows: repeat(1, 1fr);
     }
 
@@ -363,31 +383,33 @@ main{
         display: block;
     }
 
-    .Img_Cuatro {
+    .Img_Cuatro_D {
         object-fit: cover;
         grid-row: 3;
-        height: 55vh;
-        width: 110vh;
+        height: 15vh;
+        width: 200vh;
         display: flex;
+        margin-top: 40VH;
        
     }
 
-    .Img_Cinco {
+    .Img_Cinco_E {
         object-fit: cover;
         grid-column: 1/2;
-        height: 128vh;
-        width: 20vh;
+        height: 158vh;
+        width: 200vh;
         display: flex;
-        margin-top: 16vh;
+        margin-top: 80vh;
 
     }
 
-    .Img_Seis {
+    .Img_Seis_F {
         object-fit: cover;
         display: flex;
-        margin-bottom: 10vh;
-        grid-row: 3/3;
-        height: 80vh;
+        margin-bottom: 1vh;
+        grid-row: 1;
+        height: 65vh;
+        width: 190vh;
 
 
     }
@@ -404,7 +426,7 @@ display: none;
 }
     .Footer {
         background-color: #054E3B;
-        width: 218vh;
+        width: 205vh;
         height: 4vh;
         text-align: center;
         margin-top: 20px;
@@ -414,42 +436,45 @@ display: none;
     
 
     .Desc {
-        font-size: 2vh;
-        height: 55vh;
+        font-size: 2vh; 
         text-align: center;
         color: #005954;
 
     }
+    section{
 
-    .Descrip_Section_Uno_H {
-        background-color: #005954;
-        color: whitesmoke;
-        font-size: 2rem;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        align-content: center;
-        height: 40px;
-        width: 215vh;
-        margin: 10px;
-        text-align: center;
+        .Descrip_Section_Uno_H {
+            background-color: #005954;
+            color: whitesmoke;
+            font-size: 2rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            align-content: center;
+            height: 40px;
+            width: 205vh;
+            text-align: center;
+        }
+    
+        .Descrip_Section_Dos_H {
+            background-color: #5dc1b9;
+            color: whitesmoke;
+            height: 30px;
+            width: 205vh;
+            height: 20px;
+            text-align: center;
+        }
+    
+        .Descrip_Section_Tres_H {
+            color: whitesmoke;
+            background-color: #6ca3a0;
+            font-size: 1rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 205vh;
+            height: 30px;
+        }
+
+
     }
 
-    .Descrip_Section_Dos_H {
-        background-color: #5dc1b9;
-        color: whitesmoke;
-        height: 30px;
-        width: 216vh;
-        height: 20px;
-        text-align: center;
-    }
-
-    .Descrip_Section_Tres_H {
-        color: whitesmoke;
-        background-color: #6ca3a0;
-        font-size: 1rem;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        width: 216vh;
-        height: 30px;
-    }
 
 }
 

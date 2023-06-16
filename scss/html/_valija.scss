@@ -17,133 +17,159 @@ body {
     background-color: #a5b7b68b;
 
 }
+header{
 
-
-
-.logo_img {
+    .logo_img {
     
-    object-fit: cover;
-    width: 44vh;
-    height: 30vh;
+        object-fit: cover;
+        width: 44vh;
+        height: 30vh;
+    }
+    .Texto_Titulo{
+        margin-top: 5vh;
+        background-color: $color-descripcion;
+        width: 52vh;
+        text-align: center;
+        border: 2px solid black;
+    }
+    
+
+}
+main{
+
+
+    .Contenedor_Valija{
+        height: 1vh;
+        gap: 1vh;
+        display: grid;
+        grid-template-columns: repeat(3/ 1fr);
+        grid-template-rows: repeat(3/ 1fr);
+    } 
+    
+    
+    
+    .Texto_Titulo {
+    
+        margin-top: 20vh;
+        text-align: center;
+        width: 43vh;
+        height: 2vh;
+        background-color: #005954;
+    
+    
+    }
+    
+    
+    .Img_Uno_V {
+       margin-top: 37vh;
+       margin-left: 1vh;
+        width: 50vh;
+        height: 45vh;
+    }
+    
+    .Text_V_Uno {
+    
+        margin: 1vh 2vh;
+        width: 45vh;
+        height: 15vh;
+        text-align: center;
+        border: 2px solid black;
+    
+    }
+    
+    .Text_V_Dos {
+        display: none;
+    }
+    
+    .Text_V_Tres {
+        margin: 0vh 1vh;
+        height: 30vh;
+        width: 49vh;
+        text-align: center;
+        border: 2px solid black;
+    }
+    
+    .Text_V_Cuatro {
+        display: none;
+    
+    }
+    
+    .Img_Dos_V {
+        display: none;
+    
+    }
+    
+    .Img_Tres_V {
+        object-fit: cover;
+        height: 58vh;
+        width: 50vh;
+    
+    }
+    
+    .Img_Cuatro_V {
+        object-fit: cover;
+        height: 34vh;
+        width: 50vh;
+        margin-top: 10vh;
+    
+    }
+    .Text_F{
+        display: none;
+    }
+    
+}
+
+footer{
+
+        .infor{
+
+            height: 30vh;
+        }
+  
+
+        .Section_Haa {
+            object-fit: cover;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 51vh;
+            background-color: $color-descripcion;
+            text-align: center;
+            margin-top: 200vh;
+        
+        }
+        
+        .Section_Hba {
+            text-align: center;
+            height: 48px;
+            width: 45vh;
+            font-size: 25px;
+            height: 32px;
+            width: 51vh;
+            margin-top: 1vh;
+            text-align: center;
+            background-color: $color-descripcion;
+        
+        
+        }
+        
+        .Section_Hca {
+            background-color: $color-descripcion;
+            height: 98px;
+            width: 51vh;
+            margin-top: 1vh;
+            text-align: center;
+        
+        }
+        .Footer_B{
+            background-color:$color-descripcion;
+            text-align: center;
+            width: 51vh,
+
+}
+
 }
 
 
 
-.Contenedor_Valija{
-      
-    gap: 1vh;
-    display: grid;
-    grid-template-columns: repeat(3/ 1fr);
-    grid-template-rows: repeat(3/ 1fr);
-} 
-
-
-
-.Texto_Titulo {
-
-    margin-top: 10vh;
-    text-align: center;
-    width: 53vh;
-    height: 12vh;
-    background-color: #005954;
-
-
-}
-
-
-.Img_Uno_V {
-   margin-top: 60vh;
-   margin-left: 1vh;
-    width: 50vh;
-    height: 45vh;
-}
-
-.Text_V_Uno {
-
-    margin: 4vh 2vh;
-    width: 49vh;
-    height: 15vh;
-    text-align: center;
-    border: 2px solid black;
-
-}
-
-.Text_V_Dos {
-    display: none;
-}
-
-.Text_V_Tres {
-    margin: 2vh 1vh;
-    height: 30vh;
-    width: 50vh;
-    text-align: center;
-    border: 2px solid black;
-}
-
-.Text_V_Cuatro {
-    display: none;
-
-}
-
-.Img_Dos_V {
-    display: none;
-
-}
-
-.Img_Tres_V {
-    object-fit: cover;
-    height: 58vh;
-    width: 50vh;
-
-}
-
-.Img_Cuatro_V {
-    object-fit: cover;
-    height: 34vh;
-    width: 50vh;
-    margin-top: 10vh;
-
-}
-.Text_F{
-    display: none;
-}
-
-.Section_Haa {
-    object-fit: cover;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 55vh;
-    text-align: center;
-    margin-top: 78vh;
-
-}
-
-.Section_Hba {
-    text-align: center;
-    height: 48px;
-    width: 45vh;
-    font-size: 25px;
-    height: 32px;
-    width: 51vh;
-    margin-top: 2vh;
-    text-align: center;
-    background-color: $color-descripcion;
-
-
-}
-
-.Section_Hca {
-    background-color: $color-descripcion;
-    height: 98px;
-    width: 51vh;
-    margin-top: 2vh;
-    text-align: center;
-
-}
-.Footer_Ba{
-    background-color:$color-descripcion;
-    text-align: center;
-    width: 2vh,
-}
 /*estilos valiajas*/
 /*tablets*/
 
@@ -154,110 +180,125 @@ body {
        
     }
 
-    header {
 
-        height: 5vh;
-    
-     
-    }
 
-    .Texto_Titulo {
 
-        margin-top: 0vh;
-        text-align: center;
-        width: 85vh;
-        height: 10vh;
-        background-color: $color-descripcion;
-
-    }
-
-    .Contenedor_Valija{
-        margin-top: 12vh;
-        gap: 1vh;
-      
-    } 
-
-    .Img_Uno_V {
-       
-       
-        object-fit: cover;
-        width: 94vh;
-        height: 50vh;
-        margin-top: 30vh;
-       
-    }
-  
-    .Img_Tres_V{
-        object-fit: cover;
-        height: 84vh;
-        width: 95vh;
-        margin-top: 10vh;
-    }
-    .Img_Cuatro_V {
-        margin-top: 10vh;
+        .logo_img {
         
-      object-fit: cover;
-      width: 94vh;
-      height: 48vh;
-      background-color: $color-descripcion;
-     
-
-    }
-
-    .Text_V_Uno {
+            object-fit: cover;
+            width: 44vh;
+            height: 30vh;
+        }
+        .Texto_Titulo{
+            margin-top: 2vh;
+            background-color: $color-descripcion;
+            width: 10vh;
+            margin-top: 20vh;
+            text-align: center;
+            border: 2px solid black;
+        }
         
-        width: 90vh;
-        height: 12vh;
-        text-align: center;
-        border: 2px solid black;
+        main{
+            .Contenedor_Valija{
+                height: 120vh;
+                gap: 10vh;
+                display: grid;
+                grid-template-columns: repeat(2/ 1fr);
+                grid-template-rows: repeat(1/ 1fr);
+                 }
+                .Img_Uno_V {
+               
+                    display: none;
+                    object-fit: cover;
+                    width: 14vh;
+                    height: 10vh;
+                    margin-top: 1vh;
+                   
+                }
+              
+                .Img_Tres_V{
+                    object-fit: cover;
+                    height: 84vh;
+                    width: 80vh;
+                    margin: 28vh;
+                }
+                .Img_Cuatro_V {
+                    margin-top: 2vh;
+                  object-fit: cover;
+                  width: 70vh;
+                  height: 48vh;
+                  background-color: $color-descripcion;
+                 
+            
+                }
+            
+                .Text_V_Uno {
+                    
+                    width: 70vh;
+                    height: 12vh;
+                    margin-top: 45vh;
+                    text-align: center;
+                    border: 2px solid black;
+            
+                }
+              
+            } 
+            
+            .Text_V_Tres {
+                background-color: #0b4a3a28;
+                margin-top: 15vh;
+                display: block;
+                height: 110vh;
+                width: 50vh;
+                text-align: center;
+                border: 2px solid black;
+             
+            }
 
-    }
-
-    .Text_V_Tres {
-        background-color: #0b4a3a28;
-        margin-top: 5vh;
-        display: block;
-        height: 18vh;
-        width: 90vh;
-        text-align: center;
-        border: 2px solid black;
-     
-    }
-
+footer{
     .Section_Haa {
-        margin-top: 5vh;
+        margin-top: 1vh;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         width: 84vh;
         text-align: center;
-
+    
     }
-
+    
     .Section_Hba {
         text-align: center;
         height: 48px;
         width: 95vh;
         font-size: 25px;
-
-
+    
+    
     }
-
+    
     .Section_Hca {
-
+    
         height: 8vh;
         width:95vh ;
         text-align: center;
-
+    
     }
-
+    
     .Footer_B{
         width:95vh;
         background-color:$color-descripcion ;
         text-align: center;
         
-
+    
         }
+    
+
+
+} 
+    
+
 
 }
+
+    
+
 
 
 /*estilos valija*/
@@ -276,114 +317,120 @@ body {
     
      
     }
+    main{
+        .Texto_Titulo {
 
-    .Texto_Titulo {
-
-        margin-top: 10vh;
-        text-align: center;
-        width: 200vh;
-        height: 12vh;
-        background-color: $color-descripcion;
-
-    }
-
-    .Contenedor_Valija{
-        height: 10vh;
-        margin-top: 30vh;
-        gap: 1vh;
-        display: grid;
-        grid-template-columns: 100%, 100% ;
-        grid-template-rows:10% , 10%;
-    } 
-
-    .Img_Uno_V {
-        grid-column: span 2;
-        background-color: rgb(240, 144, 18);
-        object-fit: cover;
-        width: 200vh;
-        height: 80vh;
-        margin-top: 20vh;
-       
-    }
-    .Img_Dos_V {
-        grid-column:span 2 ;
-        margin-top:20vh;
-
-        background-color:$color-descripcion;
-        object-fit: cover;
-        display: block;
-        height: 80vh;
-        width: 200vh;
-
-    }
-
-    .Img_Tres_V {
-       
-         
-       grid-row:2 ;
-        object-fit: cover;
-        width: 72vh;
-        height: 80vh;
-        margin-top: 20vh;
-       
-    }
-
-    .Img_Cuatro_V {
-        grid-row: 2;
-        margin-top: 20vh;
-      object-fit: cover;
-      width: 120vh;
-      height: 80vh;
+            margin-top: 10vh;
+            text-align: center;
+            width: 200vh;
+            height: 12vh;
+            background-color: $color-descripcion;
     
-     
-
-    }
-
-    .Img_Valija_Img,
-    .Img_Valija_Tres,
-    .Img_Valija_Uno {
-        display: block;
-    }
-
-
-
-
-
-    .Text_V_Uno {
+        }
+    
+        .Contenedor_Valija{
+            height: 10vh;
+            margin-top: 30vh;
+            gap: 1vh;
+            display: grid;
+            grid-template-columns: 100%, 100% ;
+            grid-template-rows:10% , 10%;
+        } 
+    
+        .Img_Uno_V {
+            grid-column: span 2;
+            background-color: rgb(240, 144, 18);
+            object-fit: cover;
+            width: 200vh;
+            height: 80vh;
+            margin-top: 20vh;
+           
+        }
+        .Img_Dos_V {
+            grid-column:span 2 ;
+            margin-top:20vh;
+    
+            background-color:$color-descripcion;
+            object-fit: cover;
+            display: block;
+            height: 80vh;
+            width: 200vh;
+    
+        }
+    
+        .Img_Tres_V {
+           
+             
+           grid-row:1 ;
+            object-fit: cover;
+            width: 200vh;
+            height: 50vh;
+            margin-top: 20vh;
+           
+        }
+    
+        .Img_Cuatro_V {
+            grid-row: 2;
+            margin-top: 20vh;
+          object-fit: cover;
+          width: 120vh;
+          height: 80vh;
         
-        width: 120vh;
-        height: 10vh;
-        text-align: center;
-        border: 2px solid black;
+         
+    
+        }
+    
+        .Img_Valija_Img,
+        .Img_Valija_Tres,
+        .Img_Valija_Uno {
+            display: block;
+        }
+    
+
+    
+        .Text_V_Uno {
+            display: none;
+            grid-row: 0;
+            margin: 10vh ;
+            width: 120vh;
+            height: 10vh;
+            text-align: center;
+            border: 2px solid black;
+    
+        }
+    
+        .Text_V_Dos {
+            margin-top: 5vh;
+            display: block;
+            width: 130vh;
+            height: 8vh;
+            text-align: center;
+            border: 2px solid black;
+           
+         
+        }
+    
+        .Text_V_Tres {
+            display: none;
+         
+        }
+    
+
+
 
     }
 
-    .Text_V_Dos {
-        margin-top: 5vh;
-        display: block;
-        width: 60vh;
-        height: 8vh;
-        text-align: center;
-        border: 2px solid black;
-       
-     
-    }
-
-    .Text_V_Tres {
-        display: none;
-     
-    }
-
-
+   
+footer{
 
     .Infor {
 
-        height: 20vh;
+        height: 10vh;
     }
 
 
     .Section_Haa {
-        margin-top: 5vh;
+        margin-top: 1vh;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         width: 203vh;
         text-align: center;
@@ -414,6 +461,11 @@ body {
         
 
         }
+
+
+}
+
+   
 
  }
  
