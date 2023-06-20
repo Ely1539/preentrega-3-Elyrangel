@@ -44,11 +44,11 @@ main {
         text-align: center;
         margin: 20vh 1vh;
         border: 2px solid black;
-        height: 8vh;
-        width: 24vh;
+        height: 9vh;
+        width: 48vh;
         background-color: $color-descripcion;
         color: #fdecda;
-        font-size: 1vh;
+        font-size: 1.5vh;
     }
 
     .Home_P {
@@ -56,10 +56,10 @@ main {
         grid-row: span 1;
 
         background-color: #005954;
-        margin-top: 1vh;
-        width: 25vh;
-        height: 10vh;
-        font-size: 1vh;
+        margin-top: 6vh;
+        width: 48vh;
+        height: 12vh;
+        font-size: 1.5vh;
         text-align: center;
         background-color: $color-descripcion;
         color: whitesmoke;
@@ -71,8 +71,8 @@ main {
         grid-row: span 1;
         background-color: rgb(233, 233, 233);
         height: 79vh;
-        width: 25vh;
-        margin-top: 42vh;
+        width: 50vh;
+        margin-top: 52vh;
 
 
     }
@@ -81,8 +81,8 @@ main {
 
         grid-column: span 1;
         background-color: #bed606;
-        width: 25vh;
-        height: 15vh;
+        width: 50vh;
+        height: 22vh;
         margin-top: 30vh;
     }
 
@@ -97,7 +97,7 @@ main {
 
     .Img_Seis_F {
         height: 19vh;
-        margin-top: 92vh;
+        margin-top: 100vh;
     }
 
     .Descripcion_Img .Img_Tres,
@@ -107,7 +107,7 @@ main {
     .Img_Siete {
         display: none;
     }
-
+  
 
 
 }
@@ -120,7 +120,8 @@ section {
         height: 5vh;
         width: 25vh;
         text-align: center;
-        margin-top: 60vh;
+        margin-top: 108vh;
+        margin-left: 24vh;
 
     }
 
@@ -132,6 +133,8 @@ section {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         height: 5vh;
         width: 25vh;
+        margin-left: 25vh;
+        margin-top: 4vh;
         color: rgb(9, 78, 36);
 
     }
@@ -141,23 +144,24 @@ section {
         text-align: center;
         height: 5vh;
         width: 24vh;
-        font-size: 10px;
-        margin: 5px;
+        margin-left: 25vh;
+        font-size: 1.5vh;
+     
 
     }
 }
 
 
-.Footer {
+Footer {
 
-    font-size: 2vh;
 
-    .Footer_H {
+    .Footer_H{
 
         background-color: $color-descripcion;
         text-align: center;
-        width: 25vh;
+        width: 55vh;
         height: 3vh;
+        margin-top: 40vh;
         font-size: 1px;
     }
 }
@@ -165,7 +169,7 @@ section {
 /*estilos tablet home*/
 
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:700px) {
     body {
         background-color: $color-body;
     }
@@ -288,33 +292,25 @@ section {
 
     section {
 
-        .Desc {
-            font-size: 2vh;
-            height: 95vh;
-            text-align: center;
-            color: #005954;
-            border: 1px solid black;
-
-        }
-
         .Descrip_Section_Uno_H {
-            background-color: $color-descripcion;
+            background-color:$color-descripcion;
             color: whitesmoke;
             font-size: 2rem;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             align-content: center;
             height: 40px;
-            width: 89vh;
+            width: 87vh;
             text-align: center;
-            margin-top: 1vh;
+            margin: 1vh 0vh;
+            
         }
 
         .Descrip_Section_Dos_H {
             background-color: $color-section-dos;
             color: whitesmoke;
             height: 30px;
-            width: 89vh;
-            height: 20px;
+            width: 87vh;
+            margin-left: 0vh;
             text-align: center;
         }
 
@@ -323,15 +319,16 @@ section {
             background-color: $color-section-tres;
             font-size: 1rem;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            width: 89vh;
-            height: 40px;
+            width: 83vh;
+            height: 55px;
+            margin: 1vh 0vh;
         }
 
 
 
     }
 
-    .Footer {
+    Footer {
 
         .Footer_H {
             background-color: $color-descripcion;
@@ -339,10 +336,11 @@ section {
             width: 89vh;
             height: 3vh;
             font-size: 1px;
+            margin-top: 0vh;
 
         }
 
-    }
+
 
 
 }
@@ -438,35 +436,29 @@ section {
 
 
     }
-
-    .Footer {
-        background-color: #054E3B;
+footer{
+    .Footer_H {
+        background-color:$color-descripcion;
         width: 205vh;
         height: 4vh;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 1px;
     }
 
 
-
-
-    .Desc {
-        font-size: 2vh;
-        text-align: center;
-        color: #005954;
-
-    }
-
-    section {
+}
+   
+    section{
 
         .Descrip_Section_Uno_H {
-            background-color: #005954;
+            background-color:$color-descripcion;
             color: whitesmoke;
             font-size: 2rem;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             align-content: center;
             height: 40px;
             width: 205vh;
+            margin-left: 0vh;
             text-align: center;
         }
 
@@ -475,6 +467,7 @@ section {
             color: whitesmoke;
             height: 30px;
             width: 205vh;
+            margin-left: 0vh;
             height: 20px;
             text-align: center;
         }
@@ -485,11 +478,15 @@ section {
             font-size: 1rem;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             width: 205vh;
+            margin-left: 0vh;
             height: 30px;
         }
 
 
     }
+
+
+}
 
 
 }

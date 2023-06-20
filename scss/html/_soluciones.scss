@@ -120,47 +120,51 @@ main {
 
 
 }
-
-
-.Descrip_S_U {
-    background-color: $color-descripcion;
-    text-align: center;
-    width: 55vh;
-    height: 5vh;
-}
-
-.Descrip_S_T {
-    background-color: $color-section-dos;
-    text-align: center;
-    text-align: center;
-    width: 55vh;
-    height: 12vh;
-}
-
-.Descrip_S_D {
-    background-color: $color-section-tres;
-    text-align: center;
-    width: 55vh;
-    height: 5vh;
-}
-
-footer {
-    .Footer_E {
-        margin-top: 53vh;
+section{
+    .Descrip_S_U {
+        background-color: $color-descripcion;
         text-align: center;
         width: 55vh;
         height: 5vh;
-        background-color: $color-descripcion;
-        color: rgb(247, 247, 247);
-
+    }
+    
+    .Descrip_S_T {
+        background-color: $color-section-dos;
+        text-align: center;
+        text-align: center;
+        width: 55vh;
+        height: 12vh;
+    }
+    
+    .Descrip_S_D {
+        background-color: $color-section-tres;
+        text-align: center;
+        width: 55vh;
+        height: 5vh;
     }
 
 
 }
 
 
+footer {
+ 
+
+        margin-top: 259vh;
+        text-align: center;
+        width: 62vh;
+        height: 5vh;
+        background-color: $color-descripcion;
+        color: rgb(247, 247, 247);
+
+
+
+
+}
+
+
 /*soluciones estilos tablet*/
-@media screen and (min-width:600px) {
+@media screen and (min-width:700px) {
 
     main {
 
@@ -204,7 +208,8 @@ footer {
 
         .Img_S_D {
             grid-row: 1/3;
-            height: 100vh;
+            height: 90vh;
+          
         }
 
         .P_Em {
@@ -212,7 +217,7 @@ footer {
             margin-top: 2vh;
             background-color: $color-descripcion;
             text-align: center;
-            width: 45vh;
+            width: 43vh;
             height: 18vh;
             border: 2px solid black;
 
@@ -241,7 +246,7 @@ footer {
         .P_Per {
             background-color: $color-descripcion;
             text-align: center;
-            width: 48vh;
+            width: 45vh;
             height: 25vh;
             border: 2px solid black;
 
@@ -283,7 +288,7 @@ footer {
         .P_Ej {
             background-color: $color-descripcion;
             height: 15vh;
-            width: 56vh;
+            width: 52vh;
             font-size: 2vh;
             margin-top: 2vh;
             text-align: center;
@@ -305,36 +310,40 @@ footer {
         .Descrip_S_U {
             background-color: $color-descripcion;
             text-align: center;
-            width: 100vh;
+            width: 107vh;
             height: 5vh;
         }
 
         .Descrip_S_T {
-            background-color: $color-descripcion;
+            background-color: $color-section-tres;
             text-align: center;
-            width: 100vh;
+            width: 107vh;
             height: 12vh;
         }
 
         .Descrip_S_D {
-            background-color: $color-descripcion ;
+            background-color: $color-section-dos ;
             text-align: center;
-            width: 100vh;
+            width: 107vh;
             height: 5vh;
         }
 
     }
 
-
-    .Footer_E {
-        margin-top: 15vh;
-        text-align: center;
-        width: 105vh;
-        height: 5vh;
-        background-color: $color-descripcion;
-
+    footer{
+        
+            margin-top: 0vh;
+            text-align: center;
+            width: 107vh;
+            height: 5vh;
+            background-color: $color-descripcion;
+    
+    
+        
 
     }
+
+   
 
 }
 
@@ -476,37 +485,45 @@ footer {
 
 
     }
+    section{
+
+        .Descrip_S_U {
+            margin-top: 0;
+            text-align: center;
+            width: 205vh;
+            height: 5vh;
+        }
+        margin-top: 0;
+        .Descrip_S_T {
+            text-align: center;
+            text-align: center;
+            width: 205vh;
+            height: 5vh;
+        }
+    
+        .Descrip_S_D {
+            margin-top: 0;
+            text-align: center;
+            width: 215vh;
+            height: 5vh;
+        }
+    
+     
+
+    }
 
 
-    .Descrip_S_U {
+   
+}
+footer{
 
+    
+        margin-top: 1vh;
         text-align: center;
         width: 205vh;
         height: 5vh;
-    }
-
-    .Descrip_S_T {
-        text-align: center;
-        text-align: center;
-        width: 205vh;
-        height: 5vh;
-    }
-
-    .Descrip_S_D {
-
-        text-align: center;
-        width: 205vh;
-        height: 5vh;
-    }
-
-    .Footer_E {
-        margin-top: 15vh;
-        text-align: center;
-        width: 215vh;
-        height: 5vh;
-        background-color: #054E3B;
+        background-color: $color-descripcion;
         color: rgb(247, 247, 247);
         box-shadow: 7px 0px 50px rgb(19, 18, 18);
-    }
 
 }
