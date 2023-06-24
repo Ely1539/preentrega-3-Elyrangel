@@ -6,9 +6,7 @@
 
 
 
-body {
-    background-color: $color-body;
-}
+
 
 
 /*estilos pagina arma tu valija*/
@@ -18,65 +16,73 @@ body {
 
 }
 
+
 header {
+    div {
 
-    .logo_img {
+        .Contenedor_Logo {
 
-        object-fit: cover;
-        width: 44vh;
-        height: 30vh;
+            width: 35vh;
+            height: 45vh;
+            margin-top: 50vh;
+        }
+
+        a {
+            .logo_img {
+                margin-top: 10vh;
+                height: 28vh;
+                width: 35vh;
+
+            }
+
+        }
     }
 
     .Texto_Titulo {
-        margin-top: 5vh;
-        background-color: $color-descripcion;
-        width: 52vh;
+
+        margin-top: 1vh;
         text-align: center;
-        border: 2px solid black;
+        width: 50vh;
+        height: 16vh;
+        background-color: #005954;
+
+
     }
-
-
 }
+
+
 
 main {
 
 
     .Contenedor_Valija {
-        height: 1vh;
+        height: 160vh;
+        width: 70VH;
         gap: 1vh;
         display: grid;
-        grid-template-columns: repeat(3/ 1fr);
+        grid-template-columns: repeat(1/ 1fr);
         grid-template-rows: repeat(3/ 1fr);
     }
 
-
-
-    .Texto_Titulo {
-
-        margin-top: 20vh;
-        text-align: center;
-        width: 43vh;
-        height: 2vh;
-        background-color: #005954;
-
-
-    }
-
-
     .Img_Uno_V {
-        margin-top: 37vh;
-        margin-left: 1vh;
-        width: 50vh;
+        grid-row: 1;
+        width: 30vh;
         height: 45vh;
+
+        .Img_Uv {
+            margin-top: 35vh;
+            height: 30vh;
+        }
     }
 
     .Text_V_Uno {
-
-        margin: 1vh 2vh;
+        grid-row: 2;
+        margin: 3vh 2vh;
         width: 45vh;
         height: 15vh;
         text-align: center;
         border: 2px solid black;
+
 
     }
 
@@ -85,7 +91,7 @@ main {
     }
 
     .Text_V_Tres {
-        margin: 0vh 1vh;
+        margin: 20vh 1vh;
         height: 30vh;
         width: 49vh;
         text-align: center;
@@ -103,25 +109,38 @@ main {
     }
 
     .Img_Tres_V {
+        grid-row: 2;
         object-fit: cover;
         height: 58vh;
         width: 50vh;
 
+        .Img_Tv {
+            margin-top: 20vh;
+            height: 40vh;
+        }
+
     }
 
     .Img_Cuatro_V {
+        background-color: #005954;
         object-fit: cover;
-        height: 34vh;
+        height: 4vh;
         width: 50vh;
-        margin-top: 10vh;
+        margin-top: 0vh;
+
+        .Img_Cv {
+            margin-top: 0vh;
+            height: 39vh;
+        }
 
     }
 
     .Text_F {
         display: none;
     }
-
 }
+
+
 
 footer {
 
@@ -137,16 +156,16 @@ footer {
         width: 51vh;
         background-color: $color-descripcion;
         text-align: center;
-        margin-top: 200vh;
+        margin-top: 1vh;
 
     }
 
     .Section_Hba {
         text-align: center;
-        height: 48px;
+        height: 4vh;
         width: 45vh;
-        font-size: 25px;
-        height: 32px;
+        font-size: 2vh;
+        height: 3vh;
         width: 51vh;
         margin-top: 1vh;
         text-align: center;
@@ -157,7 +176,7 @@ footer {
 
     .Section_Hca {
         background-color: $color-descripcion;
-        height: 98px;
+        height: 10vh;
         width: 51vh;
         margin-top: 1vh;
         text-align: center;
@@ -165,6 +184,7 @@ footer {
     }
 
     .Footer_B {
+        margin-top: 0vh;
         background-color: $color-descripcion;
         text-align: center;
         width: 51vh,
@@ -185,111 +205,161 @@ footer {
 
     }
 
+    header {
+        div {
+
+            .Contenedor_Logo {
+
+                width: 35vh;
+                height: 45vh;
+                margin-top: 50vh;
+            }
+
+            a {
+                .logo_img {
+                    margin-top: 10vh;
+                    height: 28vh;
+                    width: 35vh;
+
+                }
+
+            }
+        }
+
+        .Texto_Titulo {
+
+            margin-top: 6vh;
+            text-align: center;
+            width: 75vh;
+            height: 12vh;
+            background-color: #005954;
 
 
-
-    .logo_img {
-
-        object-fit: cover;
-        width: 44vh;
-        height: 30vh;
+        }
     }
 
-    .Texto_Titulo {
-        margin-top: 2vh;
-        background-color: $color-descripcion;
-        width: 10vh;
-        margin-top: 20vh;
-        text-align: center;
-        border: 2px solid black;
-    }
+
 
     main {
         .Contenedor_Valija {
-            height: 120vh;
-            gap: 10vh;
+            background-color: #005954;
+            height: 210vh;
+            width: 30vh;
             display: grid;
-            grid-template-columns: repeat(2/ 1fr);
-            grid-template-rows: repeat(1/ 1fr);
+            grid-template-columns: repeat(1/ 1fr);
+            grid-template-rows: repeat(3/ 1fr);
         }
 
         .Img_Uno_V {
 
-            display: none;
+            grid-row: 1;
+            grid-column: 1/ span 1;
             object-fit: cover;
-            width: 14vh;
+            width: 10vh;
             height: 10vh;
-            margin-top: 1vh;
+
+
+            .Img_Uv {
+                margin-top: 45vh;
+                height: 50vh;
+                width: 80vh;
+
+            }
 
         }
 
         .Img_Tres_V {
+            grid-row: 1;
+            grid-column: 2 / span 2;
             object-fit: cover;
-            height: 84vh;
-            width: 80vh;
-            margin: 28vh;
+            height: 10vh;
+            width: 70vh;
+
+            .Img_Tv {
+                margin-top: 0vh;
+                height: 40vh;
+                width: 90vh;
+            }
         }
 
         .Img_Cuatro_V {
-            margin-top: 2vh;
+            grid-row: 2;
+            grid-column: 1/ span 1;
+            margin-top: 10vh;
             object-fit: cover;
-            width: 70vh;
-            height: 48vh;
+            width: 0vh;
+            height: 10vh;
             background-color: $color-descripcion;
+
+            .Img_Cv {
+                height: 70vh;
+                width: 110vh;
+
+            }
 
 
         }
 
         .Text_V_Uno {
-
-            width: 70vh;
+            grid-row: 1;
+            width: 100vh;
             height: 12vh;
-            margin-top: 45vh;
+            margin-top: 1vh;
             text-align: center;
             border: 2px solid black;
 
         }
 
+        .Text_V_Tres {
+            grid-row: 3;
+            background-color: #0b4a3a28;
+            margin-top: 0vh;
+            display: block;
+            height: 20vh;
+            width: 100vh;
+            text-align: center;
+            border: 2px solid black;
+
+        }
+
+
     }
 
-    .Text_V_Tres {
-        background-color: #0b4a3a28;
-        margin-top: 15vh;
-        display: block;
-        height: 110vh;
-        width: 50vh;
-        text-align: center;
-        border: 2px solid black;
 
-    }
 
     footer {
-        .Section_Haa {
-            margin-top: 1vh;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            width: 84vh;
-            text-align: center;
-
-        }
-
-        .Section_Hba {
-            text-align: center;
-            height: 48px;
-            width: 95vh;
-            font-size: 25px;
+        .Infor {
 
 
-        }
+            h1 {
+                margin-top: 1vh;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                width: 84vh;
+                text-align: center
+            }
 
-        .Section_Hca {
+            h2 {
+                margin-top: 0;
+                text-align: center;
+                height: 48px;
+                width: 95vh;
+                font-size: 2 5px;
+            }
 
-            height: 8vh;
-            width: 95vh;
-            text-align: center;
+            h3 {
+                margin-top: 0vh;
+                height: 8vh;
+                width: 95vh;
+                text-align: center;
+
+
+            }
+
 
         }
 
         .Footer_B {
+            margin-top: 0vh;
             width: 95vh;
             background-color: $color-descripcion ;
             text-align: center;
@@ -303,362 +373,225 @@ footer {
 
 
 
-}
 
 
 
 
 
-/*estilos valija*/
-/*desktop*/
-@media screen and (min-width: 1024px) {
 
-    body {
+    /*estilos valija*/
+    /*desktop*/
+    @media screen and (min-width: 1024px) {
 
-        background-color: #a5b7b68b;
+        body {
 
-    }
-
-    header {
-
-        height: 5vh;
-
-
-    }
-
-    main {
-        .Texto_Titulo {
-
-            margin-top: 10vh;
-            text-align: center;
-            width: 200vh;
-            height: 12vh;
-            background-color: $color-descripcion;
+            background-color: #a5b7b68b;
 
         }
 
-        .Contenedor_Valija {
-            height: 10vh;
-            margin-top: 30vh;
-            gap: 1vh;
-            display: grid;
-            grid-template-columns: 100%, 100%;
-            grid-template-rows: 10%, 10%;
-        }
 
-        .Img_Uno_V {
-            grid-column: span 2;
-            background-color: rgb(240, 144, 18);
-            object-fit: cover;
-            width: 200vh;
-            height: 80vh;
-            margin-top: 20vh;
+        header {
+            div {
 
-        }
+                .Contenedor_Logo {
 
-        .Img_Dos_V {
-            grid-column: span 2;
-            margin-top: 20vh;
+                    width: 35vh;
+                    height: 45vh;
+                    margin-top: 50vh;
+                }
 
-            background-color: $color-descripcion;
-            object-fit: cover;
-            display: block;
-            height: 80vh;
-            width: 200vh;
+                a {
+                    .logo_img {
+                        margin-top: 10vh;
+                        height: 28vh;
+                        width: 35vh;
 
-        }
+                    }
 
-        .Img_Tres_V {
-
-
-            grid-row: 1;
-            object-fit: cover;
-            width: 200vh;
-            height: 50vh;
-            margin-top: 20vh;
-
-        }
-
-        .Img_Cuatro_V {
-            grid-row: 2;
-            margin-top: 20vh;
-            object-fit: cover;
-            width: 120vh;
-            height: 80vh;
+                }
+            }
 
 
 
         }
 
-        .Img_Valija_Img,
-        .Img_Valija_Tres,
-        .Img_Valija_Uno {
-            display: block;
+        main {
+            .Texto_Titulo {
+
+                margin-top: 0vh;
+                text-align: center;
+                width: 300vh;
+                height: 12vh;
+                background-color: pink;
+
+            }
+
+            .Contenedor_Valija {
+                height: 170vh;
+                width: 190vh;
+                margin-top: 0vh;
+                display: grid;
+                grid-column: repeat(3 /1fr);
+                grid-row: repeat(3, 1fr);
+            }
+
+            .Img_Uno_V {
+                grid-column: 1;
+                grid-row: 3;
+                object-fit: cover;
+                width: 20vh;
+                height: 20vh;
+                margin-top: 0vh;
+
+                .Img_Uv {
+                    height: 60vh;
+                    width: 190vh;
+                }
+
+            }
+
+            .Img_Dos_V {
+                grid-column: 1;
+                grid-row: 2;
+                margin-top: 53vh;
+                background-color: $color-descripcion;
+                object-fit: cover;
+                display: block;
+                height: 40vh;
+                width: 40vh;
+
+                .Img_Dv {
+                    height: 80vh;
+                    width: 90vh;
+                }
+
+            }
+
+            .Img_Tres_V {
+
+
+                grid-row: 2;
+                grid-column: 2;
+                object-fit: cover;
+                width: 80vh;
+                height: 40vh;
+                margin-top: 53vh;
+
+                .Img_Tv {
+                    height: 80vh;
+                    width: 100vh;
+                    margin-left: 35vh;
+                }
+
+            }
+
+            .Img_Cuatro_V {
+                grid-row: 1;
+                margin-top: 20vh;
+                object-fit: cover;
+                width: 40vh;
+                height: 40vh;
+
+                .Img_Cv {
+                    height: 90vh;
+                    width: 190vh;
+                }
+
+
+
+            }
+
+            .Img_Valija_Img,
+            .Img_Valija_Tres,
+            .Img_Valija_Uno {
+                display: block;
+            }
+
+
+
+            .Text_V_Uno {
+
+                grid-row: 1;
+                grid-column: 1;
+                margin: 10vh;
+                width: 140vh;
+                height: 10vh;
+                text-align: center;
+                border: 2px solid black;
+
+            }
+
+            .Text_V_Dos {
+                grid-row: 1;
+                grid-column: 2;
+                margin-top: 5vh;
+                display: block;
+                width: 120vh;
+                height: 10vh;
+                text-align: center;
+                border: 2px solid black;
+
+
+            }
+
+            .Text_V_Tres {
+                display: none;
+
+            }
+
+
+
+
+        }
+
+
+        footer {
+          
+
+            .Infor {
+                  width: 210vh;
+                h1 {
+                    margin-top: 1vh;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    width: 203vh;
+                    text-align: center;
+                }
+
+                h2 {
+                    text-align: center;
+                    height: 48px;
+                    width: 203vh;
+                    font-size: 25px;
+                }
+
+                h3 {
+
+                    height: 45px;
+                    width: 203vh;
+                    text-align: center;
+
+
+                }
+
+                .Footer_B {
+                width: 203vh;
+                background-color: $color-descripcion;
+                text-align: center;
+
+
+            } 
+
+            }
+
+
+           
+
+
         }
 
 
 
-        .Text_V_Uno {
-            display: none;
-            grid-row: 0;
-            margin: 10vh;
-            width: 120vh;
-            height: 10vh;
-            text-align: center;
-            border: 2px solid black;
-
-        }
-
-        .Text_V_Dos {
-            margin-top: 5vh;
-            display: block;
-            width: 130vh;
-            height: 8vh;
-            text-align: center;
-            border: 2px solid black;
-
-
-        }
-
-        .Text_V_Tres {
-            display: none;
-
-        }
-
-
-
-
     }
 
-
-    footer {
-
-        .Infor {
-
-            height: 10vh;
-        }
-
-
-        .Section_Haa {
-            margin-top: 1vh;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            width: 203vh;
-            text-align: center;
-
-        }
-
-        .Section_Hba {
-            text-align: center;
-            height: 48px;
-            width: 203vh;
-            font-size: 25px;
-
-
-        }
-
-        .Section_Hca {
-
-            height: 45px;
-            width: 203vh;
-            text-align: center;
-
-        }
-
-        .Footer_B {
-            width: 203vh;
-            background-color: $color-descripcion;
-            text-align: center;
-
-
-        }
-
-
-    }
-
-
-
-}
-
-@media screen and (min-width:600px) {
-
-    body {
-        height: 20vh;
-    }
-
-    .Parrafo_Ga {
-        margin-top: 25vh;
-        width: 106vh;
-        height: 20vh;
-        font-size: 3vh;
-        text-align: center;
-        border: 2px solid black;
-        background-color: $color-descripcion;
-    }
-
-
-    .Parrafo_Img_H {
-        object-fit: cover;
-        margin-top: 180vh;
-        height: 25vh;
-        width: 107vh;
-    }
-
-    .Parrafo_Img_I {
-        display: block;
-        object-fit: cover;
-        height: 55VH;
-        margin-top: 8vh;
-
-
-    }
-
-    .P_H {
-        background-color: $color-descripcion;
-        width: 100vh;
-        margin-left: 1vh;
-        margin-top: 6vh;
-        font-size: 2vh;
-        text-align: center;
-        border: 2px solid black;
-    }
-
-    .P_H_Uno {
-        background-color: $color-descripcion;
-        width: 105vh;
-        margin-left: 1vh;
-        margin-top: 5vh;
-        text-align: center;
-        border: 2px solid black;
-    }
-
-    .Infor_Eq {
-
-        margin-top: 100vh;
-        height: 20vh;
-        width: 52vh;
-        text-align: center;
-    }
-
-    .Img_On {
-        object-fit: cover;
-        height: 80vh;
-        margin-top: 5vh;
-    }
-
-    .section_haeq {
-        margin-top: 130vh;
-        width: 107vh;
-        background-color: $color-descripcion;
-    }
-
-    .section_hbeq {
-        width: 107vh;
-        background-color: $color-descripcion;
-    }
-
-    .section_hceq {
-        width: 107vh;
-        background-color: $color-descripcion;
-    }
-
-    .footer_eq {
-        margin-top: 5vh;
-        text-align: center;
-        color: rgb(247, 247, 247);
-        height: 35px;
-        width: 107vh;
-        background-color: $color-descripcion;
-        box-shadow: 7px 0px 50px rgb(19, 18, 18);
-
-    }
-
-
-}
-
-/*estilos equipos de trabajo*/
-/*DESKTOP*/
-
-@media screen and (min-width: 1024px) {
-    body {
-        height: 420vh;
-    }
-
-    .Parrafo_Ga {
-        margin-top: 55vh;
-        width: 190vh;
-        height: 10vh;
-        font-size: 3vh;
-        text-align: center;
-        border: 2px solid black;
-        background-color: $color-descripcion;
-    }
-
-
-    .Parrafo_Img_H {
-        object-fit: cover;
-        height: 110vh;
-        width: 160vh;
-    }
-
-    .Parrafo_Img_I {
-        display: block;
-        object-fit: cover;
-        height: 70VH;
-        margin-top: 8vh;
-        margin-left: 80vh;
-
-    }
-
-    .P_H {
-
-        width: 150vh;
-        margin-left: 18vh;
-        margin-top: 10vh;
-        font-size: 2vh;
-        text-align: center;
-
-    }
-
-    .P_H_Uno {
-
-        background-color: $color-descripcion;
-        width: 190vh;
-        margin-left: 1vh;
-        margin-top: 5vh;
-        text-align: center;
-        border: 2px solid black;
-    }
-
-    .Img_On {
-        object-fit: cover;
-        height: 90vh;
-    }
-
-    .section_haeq {
-        margin-top: 130vh;
-        width: 198vh;
-        background-color: $color-descripcion;
-    }
-
-    .section_hbeq {
-        width: 198vh;
-        background-color: $color-descripcion;
-    }
-
-    .section_hceq {
-        width: 198vh;
-        background-color: $color-descripcion;
-    }
-
-    .footer_eq {
-        margin-top: 160vh;
-        text-align: center;
-        color: rgb(247, 247, 247);
-        height: 35px;
-        width: 202vh;
-        background-color: $color-descripcion;
-        box-shadow: 7px 0px 50px rgb(19, 18, 18);
-
-    }
 
 }

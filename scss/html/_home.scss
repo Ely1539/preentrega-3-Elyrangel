@@ -14,38 +14,53 @@ body {
 }
 
 header {
-    .logo_img {
-        margin-top: 6vh;
-        height: 10vh;
-        width: 15vh;
+    div {
+
+        .Contenedor_Logo {
+
+            width: 75vh;
+            height: 55vh;
+
+
+            a {
+                .logo_img {
+                    margin-top: 6vh;
+                    height: 28vh;
+                    width: 45vh;
+
+                }
+
+            }
+        }
+
+
     }
 
-    .Contenedor_Logo {
 
-        width: 35vh;
-        height: 15vh;
-    }
 
 }
 
+
+
+
 main {
-    height: 05vh;
+    height: 15vh;
 
     .Descripcion_Img {
         display: grid;
-        grid-template-columns: repeat(1, 15%);
-        grid-template-rows: repeat(2, 10%);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         height: 10vh;
     }
 
     .Lorem_Index {
 
-        grid-row: span 1;
+        grid-row: 1;
         text-align: center;
-        margin: 20vh 1vh;
+        margin: 1vh 1vh;
         border: 2px solid black;
-        height: 9vh;
-        width: 48vh;
+        height: 10vh;
+        width: 50vh;
         background-color: $color-descripcion;
         color: #fdecda;
         font-size: 1.5vh;
@@ -53,11 +68,11 @@ main {
 
     .Home_P {
 
-        grid-row: span 1;
+        grid-row: 1;
 
         background-color: #005954;
-        margin-top: 6vh;
-        width: 48vh;
+        margin-top: 1vh;
+        width: 52vh;
         height: 12vh;
         font-size: 1.5vh;
         text-align: center;
@@ -66,38 +81,42 @@ main {
         border: 2px solid black;
     }
 
-    .Img_Uno_A {
+    .Img_U {
         object-fit: cover;
-        grid-row: span 1;
-        background-color: rgb(233, 233, 233);
+        grid-row: 1;
+        background-color: rgb(189, 76, 76);
         height: 79vh;
         width: 50vh;
-        margin-top: 52vh;
+        margin-top: 1vh;
 
 
     }
 
-    .Img_Dos_B {
+    .Img_Dos {
+        width: 100vh;
+        height: 100vh;
+    }
 
-        grid-column: span 1;
+    .Img_D {
+
+        grid-row: 1;
         background-color: #bed606;
         width: 50vh;
-        height: 22vh;
-        margin-top: 30vh;
+        height: 40vh;
+        margin: 1vh 2vh;
     }
 
     .Img_Tres_C {
 
         display: none;
-        background-color: aqua;
-        width: 100vh;
-        margin-top: 7vh;
-        margin-left: 3vh;
+
     }
 
     .Img_Seis_F {
+        background-color: aqua;
+        grid-row: 2;
         height: 19vh;
-        margin-top: 100vh;
+        margin-top: 1vh;
     }
 
     .Descripcion_Img .Img_Tres,
@@ -107,35 +126,36 @@ main {
     .Img_Siete {
         display: none;
     }
-  
+
 
 
 }
 
 section {
     .Descrip_Section_Uno_H {
-        background-color: $color-descripcion;
+
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 2VH;
+        font-size: 4vh;
         height: 5vh;
-        width: 25vh;
+        width: 35vh;
         text-align: center;
-        margin-top: 108vh;
-        margin-left: 24vh;
+        margin: 3vh 20vh;
+        color: #161515;
+
 
     }
 
     .Descrip_Section_Dos_H {
 
-        background-color: rgb(202, 196, 207);
+        background-color: rgb(231, 223, 238);
         text-align: center;
         font-size: 1rem;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         height: 5vh;
         width: 25vh;
-        margin-left: 25vh;
-        margin-top: 4vh;
-        color: rgb(9, 78, 36);
+        margin-left: 26vh;
+        margin-top: 20vh;
+        color: rgb(4, 107, 38);
 
     }
 
@@ -144,9 +164,11 @@ section {
         text-align: center;
         height: 5vh;
         width: 24vh;
-        margin-left: 25vh;
-        font-size: 1.5vh;
-     
+        margin: 3vh 25vh;
+        font-size: 2.5vh;
+        color: #f60b0b;
+        font-style: oblique;
+
 
     }
 }
@@ -155,13 +177,13 @@ section {
 Footer {
 
 
-    .Footer_H{
+    .Footer_H {
 
         background-color: $color-descripcion;
         text-align: center;
         width: 55vh;
         height: 3vh;
-        margin-top: 40vh;
+        margin-top: 105vh;
         font-size: 1px;
     }
 }
@@ -175,111 +197,166 @@ Footer {
     }
 
     header {
-        .logo_img {
-            margin-top: 15vh;
-            height: 30vh;
-            width: 45vh;
+        div {
+
+            .Contenedor_Logo {
+
+                width: 55vh;
+                height: 45vh;
+
+
+                a {
+                    .logo_img {
+                        margin-top: 6vh;
+                        height: 28vh;
+                        width: 45vh;
+
+                    }
+
+                }
+            }
+
+
         }
 
-        width: 100vh;
-        height:10vh;
-
-        .Contenedor_Logo {
-            object-fit: cover;
-            margin: 10px;
-            height: 150vh;
-        }
 
 
     }
 
+
+
     main {
         .Descripcion_Img {
-
+            background-color: #005954;
             display: grid;
-            grid-template-columns: repeat(1, 10%);
-            grid-template-rows: repeat(3, 15%);
-            height: 230vh;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            height: 320vh;
         }
 
         .Lorem_Index {
+            grid-row: 2;
+            grid-column: 1/ span 1;
             text-align: center;
-            margin-top: 1vh;
+            margin-top: 62vh;
             border: 2px solid black;
-            height: 18vh;
-            width: 25vh;
-            font-size: 1.5vh;
+            height: 8vh;
+            width: 98vh;
+            font-size: 2vh;
             background-color: $color-descripcion;
             color: #fdecda;
         }
 
-        .Img_Cuatro_D {
-            height: 59vh;
-            margin-left: 2vh;
-            margin-top: 15vh;
+        .Img_Cuatro {
+            grid-row: 2;
+            grid-column: 1/span 2;
+            height: 69vh;
+            width: 100vh;
+            margin: 70vh 2vh;
+
+            .Img_C {
+                object-fit: cover;
+                width: 100vh;
+                height: 60vh;
+            }
         }
+
 
         .Img_Cinco {
+            grid-row: 2;
+            grid-column: 1;
+            background-color: violet;
             display: block;
-            width: 10vh;
+            width: 120vh;
+            height: 40vh;
+            margin-top: 165vh;
+
+            .Img_Ci {
+                width: 110vh;
+
+            }
         }
 
-        .Img_Seis_F {
-            height: 10vh;
-            margin-top: 10vh;
+        .Img_Seis {
+            object-fit: cover;
+            grid-row: 5;
+            grid-column: 1;
+            background-color: yellow;
+            width: 120vh;
+            height: 50vh;
+            margin-top: 30vh;
+
+            .Img_S {
+                width: 110vh;
+                height: 60vh;
+            }
         }
 
         .Desc {
+            grid-row: 2;
+            grid-column: 2/ span 1;
             text-align: center;
-            margin-top: 3vh;
+            margin-top: 4vh;
             border: 2px solid black;
-            height: 25vh;
-            width: 80vh;
+            height: 15vh;
+            width: 90vh;
             background-color: $color-descripcion;
             color: #fdecda;
         }
 
         .Home_P {
-            margin-top: 5vh;
-            width: 80vh;
-            height: 10vh;
+            display: grid;
+            grid-row: 1;
+            grid-column: 4;
+            margin-top: 10vh;
+            width: 28vh;
+            height: 20vh;
             font-size: 1.5vh;
             background-color: $color-descripcion;
             color: whitesmoke;
             border: 2px solid black;
         }
 
-        .Img_Uno_A {
-            grid-column: 1;
-            object-fit: cover;
-            background-color: aliceblue;
-            height: 60vh;
-            width: 80vh;
-            margin-top: 40vh;
+        .Img_Uno {
 
+            display: grid;
+            grid-row: 1;
+            object-fit: cover;
+            background-color: rgb(11, 130, 235);
+            height: 20vh;
+            width: 10vh;
+            margin-top: 0vh;
+
+            .Img_U {
+                width: 80vh;
+            }
         }
 
-        .Img_Dos_B {
+        .Img_Dos {
             display: none;
         }
 
-        .Img_Tres_C {
-            margin-top: 10vh;
-            width: 30vh;
-            margin-top: 7vh;
-            margin-left: 3vh;
+        .Img_Tres {
+            grid-row: 6;
+            background-color: #005954;
+            height: 90vh;
+            width: 120vh;
+
+
+
+            .Img_T {
+                margin: 10vh 20vh;
+                width: 70vh;
+                height: 60vh;
+
+            }
+
         }
 
-        .Img_Cinco_E {
-            object-fit: cover;
-            height: 51vh;
-            margin: 15vh, 1vh;
-        }
 
-        .Img_Seis_F {
-            object-fit: cover;
-            height: 62vh;
-        }
+
+
+
 
         .Descripcion_Img .Img_Tres,
         .Img_Cuatro,
@@ -293,24 +370,24 @@ Footer {
     section {
 
         .Descrip_Section_Uno_H {
-            background-color:$color-descripcion;
+            background-color: $color-descripcion;
             color: whitesmoke;
             font-size: 2rem;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             align-content: center;
             height: 40px;
-            width: 87vh;
+            width: 110vh;
             text-align: center;
-            margin: 1vh 0vh;
-            
+            margin: 5vh 0vh;
+
         }
 
         .Descrip_Section_Dos_H {
             background-color: $color-section-dos;
             color: whitesmoke;
             height: 30px;
-            width: 87vh;
-            margin-left: 0vh;
+            width: 110vh;
+            margin: 0vh;
             text-align: center;
         }
 
@@ -319,9 +396,9 @@ Footer {
             background-color: $color-section-tres;
             font-size: 1rem;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            width: 83vh;
+            width: 110vh;
             height: 55px;
-            margin: 1vh 0vh;
+            margin: 0vh 0vh;
         }
 
 
@@ -333,7 +410,7 @@ Footer {
         .Footer_H {
             background-color: $color-descripcion;
             text-align: center;
-            width: 89vh;
+            width: 110vh;
             height: 3vh;
             font-size: 1px;
             margin-top: 0vh;
@@ -343,115 +420,180 @@ Footer {
 
 
 
-}
-
-/*estilos para desktop*/
-/* home*/
-
-@media screen and (min-width: 1024px) {
-
-    body {
-        background-color: $color-descripcion;
     }
 
+    /*estilos para desktop*/
+    /* home*/
+
+    @media screen and (min-width: 1024px) {
+
+        body {
+            background-color: $color-descripcion;
+        }
 
 
-    .Contenedor_Logo {
-        object-fit: cover;
-        width: 50vh;
+        header {
+            div {
 
-        height: 100vh;
+                .Contenedor_Logo {
+
+                    width: 55vh;
+                    height: 45vh;
+
+
+                    a {
+                        .logo_img {
+                            margin-top: 0vh;
+                            height: 28vh;
+                            width: 45vh;
+
+                        }
+
+                    }
+                }
+
+
+            }
+
+
+
+        }
+
+
+        main {
+
+            .Descripcion_Img {
+                background-color: #005954;
+                margin-top: 0vh;
+                height: 205vh;
+                width: 200vh;
+                margin-top: 30vh;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+            }
+
+            .Img_Uno {
+                display: none;
+            }
+
+            .Img_Cuatro,
+            .Img_Seis {
+                display: block;
+            }
+
+            .Img_Dos {
+                background-color: #bed606;
+
+                .Img_D {
+                    height: 20VH;
+                }
+            }
+
+
+            .Img_Cuatro {
+                grid-row: 2;
+                grid-column: 1/ span 2;
+                height: 15vh;
+                width: 200vh;
+                display: flex;
+                margin-top: 40VH;
+
+
+                .Img_C {
+                    width: 100vh;
+                    height: 115vh;
+                }
+
+            }
+
+            .Img_Cinco {
+                grid-row: 1;
+                grid-column: 1 / 2;
+                height: 60vh;
+                width: 200vh;
+    
+                margin-top: 30vh;
+    
+                .Img_Ci {
+                    width: 200vh;
+                    height: 90vh;
+                }
+    
+            }
+    
+            .Img_Seis {
+                grid-row: 2;
+                grid-column: 1/ span 1;
+                object-fit: cover;
+                margin: 59vh 102.5vh;
+                height: 10vh;
+                width: 100vh;
+    
+                .Img_S {
+                    height: 96vh;
+                    width: 99vh;
+    
+                }
+    
+            }
+    
+            .Img_Tres {
+                grid-row: 6;
+                background-color: #005954;
+                height: 90vh;
+                width: 200vh;
+                
+    
+    
+    
+                .Img_T {
+                    margin: 1vh 20vh;
+                    width: 160vh;
+                    height: 90vh;
+                  ;
+                }
+    
+            }
+    
+            .Lorem_Index {
+                grid-row: 4;
+                grid-column: 1/ span 1;
+                text-align: center;
+                margin-top: 30vh;
+                border: 2px solid black;
+                height: 8vh;
+                width: 98vh;
+                font-size: 2vh;
+                background-color: $color-descripcion;
+                color: #fdecda;
+            }
+    
+    
+        }
+
+
+
+        }
+
+
+     
+
+    footer {
+        .Footer_H {
+            background-color: $color-descripcion;
+            width: 205vh;
+            height: 4vh;
+            text-align: center;
+            margin-top: 1px;
+        }
+
+
     }
 
-    .logo_img {
-        width: 20vh;
-    }
-
-    .Lorem_Index {
-        display: none;
-    }
-
-
-
-
-    main {
-
-        .Descripcion_Img {
-            margin-top: 1vh;
-            height: 25vh;
-            width: 100vh;
-            grid-template-columns: repeat(2, 3fr);
-            grid-template-rows: repeat(1, 1fr);
-        }
-
-        .Img_Uno,
-        .Img_Dos {
-            display: none;
-        }
-
-        .Img_Cuatro,
-        .Img_Seis {
-            display: block;
-        }
-
-        .Img_Cuatro_D {
-            object-fit: cover;
-            grid-row: 3;
-            height: 15vh;
-            width: 200vh;
-            display: flex;
-            margin-top: 40VH;
-
-        }
-
-        .Img_Cinco_E {
-            object-fit: cover;
-            grid-column: 1/2;
-            height: 158vh;
-            width: 200vh;
-            display: flex;
-            margin-top: 80vh;
-
-        }
-
-        .Img_Seis_F {
-            object-fit: cover;
-            display: flex;
-            margin-bottom: 1vh;
-            grid-row: 1;
-            height: 65vh;
-            width: 190vh;
-
-
-        }
-
-        .Img_Tres_C {
-            display: none;
-        }
-
-
-
-
-
-
-
-    }
-footer{
-    .Footer_H {
-        background-color:$color-descripcion;
-        width: 205vh;
-        height: 4vh;
-        text-align: center;
-        margin-top: 1px;
-    }
-
-
-}
-   
-    section{
+    section {
 
         .Descrip_Section_Uno_H {
-            background-color:$color-descripcion;
+            background-color: $color-descripcion;
             color: whitesmoke;
             font-size: 2rem;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -489,4 +631,5 @@ footer{
 }
 
 
-}
+
+
