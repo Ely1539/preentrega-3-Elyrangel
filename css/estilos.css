@@ -1170,3 +1170,12 @@ header .textoTitulo {
       border: 2px solid black; }
     .valija .textVTres {
       display: none; } }
+
+footer {
+  width: 100vh; }
+  footer h2 {
+    object-fit: cover;
+    width: 100%;
+    background-color: #665A48;
+    color: whitesmoke;
+    text-align: center; }
