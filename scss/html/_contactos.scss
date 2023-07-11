@@ -8,30 +8,25 @@
 /*estilos celulares*/
 
 
-.logo_img {
-    display: flex;
-    @include medidas(30vh, 30vh)
-}
 
-.fieldset_legend {
+.fieldsetLegend {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1vh;
     width: 40vh;
 
 }
 
-.legend_label {
+.legendLabel {
     display: flex;
-    width: 106vh;
+    width: 60vh;
     height: 5vh;
-    background-color: #447c84;
+    background-color: $color-descripcion;
     border-radius: 2vh;
     margin-bottom: 2vh;
     border: 3px solid rgb(3, 3, 3);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
-    color: rgb(218, 238, 255);
-
+    color: $color-text;
 
 }
 
@@ -40,95 +35,87 @@
     width: 12vh;
     height: 5vh;
     margin: 16px;
-
-
 }
 
 .boton:hover {
     height: 10vh;
     width: 20vh;
-    background-color: #040404;
-    color: #fdecda;
+    background-color:$color-descripcion;
+    color: $color-text;
 }
 
+.contactos {
+  
+    height: 170vh;
+    width: 60vh;
 
+    .imgMain {
+        height: 50vh;
+        width: 20vh;
 
-
-main {
-
-
-    .Img_Cont_A {
-        object-fit: cover;
-
-        height: 38vh;
-
+        .imgContA {
+            object-fit: cover;
+            width: 60vh;
+            height: 38vh;
+        }
     }
 
-    .Img_Cont_B {
-        object-fit: cover;
-        height: 38vh;
-        margin: 10vh 2vh
+    .imgMainUno {
+        height: 50vh;
+        width: 20vh;
+
+        .imgContB {
+            object-fit: cover;
+            height: 38vh;
+            width: 60vh;
+            margin: 0vh 0vh
+        }
     }
 
+    .imgMainDos {
+        height: 50vh;
+        width: 50vh;
 
-    .Img_Contacto {
-        object-fit: cover;
-        display: flex;
-        margin: 2vh 2vh;
-        height: 32vh;
-
+        .imgContacto {
+            object-fit: cover;
+            width: 60vh;
+            height: 40vh;
+        }
     }
 
-    .Texto_Contacto {
-        margin-top: 12vh;
-        height: 15vh;
-        width: 53vh;
-        background-color: #447c84;
+    .textoContacto {
+        margin: 0vh 2vh;
+        height: 13vh;
+        width: 57vh;
+        background-color: $color-descripcion;
+        color: $color-text;
         text-align: center;
         border: 3px solid black;
-
     }
 }
 
-footer {
+.redes {
+    margin: 0vh 8vh;
+    display: flex;
+    object-fit: contain;
 
-    .Redes {
+    .wS {
+        @include redes-a
+    }
 
-        margin-top: 25vh;
-        display: flex;
+    .face {
+        @include redes-a
+    }
 
+    .instagram {
+        @include redes-a
+    }
 
-        .W_S {
-
-            @include redes-a
-        }
-
-        .Face {
-            @include redes-a
-        }
-
-        .Instagram {
-            @include redes-a
-        }
-
-        .E_Mail {
-
-            @include redes-a
-        }
+    .eMail {
+        @include redes-a
     }
 
 }
-
-.Footer_G {
-    margin-top: 0vh;
-    background-color: #447c84;
-    width: 52VH;
-    height: 30px;
-    text-align: center;
-}
-
-
-
 
 /*media querys*/
 
@@ -137,296 +124,140 @@ footer {
 
 @media screen and (min-width:600px) {
 
-    .logo_img {
-        display: flex;
-        margin-top: 10vh;
+    .contactos {
+        grid-template-columns: repeat(1 / 1fr);
+        grid-template-rows: repeat(4 / 1fr);
+       
+        width: 110vh;
+        height: 180vh;
 
-    }
-
-
-    header {
-
-
-
-        .fieldset_legend {
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: 1vh;
-            width: 20vh;
-
-        }
-
-        .legend_label {
-            display: flex;
-            width: 49vh;
-            height: 5vh;
-            background-color: #447c84;
-            border-radius: 2vh;
-            margin-bottom: 2vh;
-            border: 3px solid rgb(3, 3, 3);
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: 15px;
-            color: rgb(218, 238, 255);
-        }
-
-
-        .boton {
-            background-color: #447c84;
-            padding: 8px;
-            width: 12vh;
-            height: 5vh;
-            margin: 16px;
-
-        }
-
-        .boton:hover {
-            height: 10vh;
-            width: 20vh;
-            background-color: #040404;
-            color: #fdecda;
-        }
-
-
-    }
-
-    main {
-
-        .Img_Cont_A {
-            object-fit: cover;
-            margin-top: 70vh;
-            height: 68vh;
-            margin-left: 1.5vh;
-        }
-
-        .Img_Cont_B {
-            object-fit: cover;
-            height: 79vh;
-            margin: 10vh 1vh;
-        }
-
-
-        .Img_Contacto {
-            object-fit: cover;
-            display: flex;
-            margin-top: 3vh;
-            height: 70vh;
-
-        }
-
-        .Texto_Contacto {
-            height: 10vh;
-            width: 99vh;
-            background-color: $color-descripcion;
-            text-align: center;
-            border: 3px solid black;
-        }
-
-    }
-
-    footer {
-        .Redes {
-            @include redes-tablet
-        }
-
-        .W_S {
-
-            @include redes-b
-        }
-
-        .Face {
-            @include redes-b
-        }
-
-        .Instagram {
-            @include redes-b
-        }
-
-        .E_Mail {
-            @include redes-b
-        }
-    }
-
-    .Footer_G {
-        margin-top: 5vh;
-        background-color: $color-descripcion;
-        width: 106vh;
-        height: 40px;
-        text-align: center;
-
-    }
-
-
-}
-
-
-/*estilos contactos*/
-/*desktop*/
-@media screen and (min-width: 1024px) {
-
-    main {
-
-        height: 60vh;
-       width: 100vh;
-        display: grid;
-        grid-template-columns: repeat(1, 1 fr);
-        grid-template-rows: repeat(3, 1 fr);
-
-        .Img_Main {
+        .imgMain {
+            width: 50vh;
+            height: 50vh;
             grid-row: 1;
             grid-column: 1;
 
-            .Img_Cont_A {
-                margin-top: 20vh;
+            .imgContA {
                 object-fit: cover;
-                height: 60vh;
-                width: 198vh;
-
+                margin: 2vh 4vh;
+                height: 58vh;
+                width: 100vh;
             }
-
-
-
         }
 
-
-
-
-        .Img_Main_Uno {
+        .imgMainUno {
+            height: 50vh;
+            width: 50vh;
             grid-row: 2;
             grid-column: 1;
-            margin-top: 0vh;
-            display: block;
 
-            .Img_Cont_B {
-        
-                margin-top: 0vh;
+            .imgContB {
                 object-fit: cover;
-                width: 200vh;
-                height: 130VH;
+                height: 30vh;
+                width: 80vh;
+                margin: 15vh 12vh;
             }
         }
 
-
-
-        .Img_Contacto {
-            grid-row: 1;
-            object-fit: cover;
-            align-content: center;
-            margin-top: 120vh;
+        .imgMainDos {
+            width: 50vh;
+            height: 50vh;
+            grid-row: 3;
             grid-column: 1;
-            height: 130vh;
-       
 
-
-
+            .imgContacto {
+                width: 100vh;
+                object-fit: cover;
+                margin: 1vh 4vh;
+                height: 50vh;
+            }
         }
 
-        .Texto_Contacto {
-            grid-row: 1;
-            grid-column: 1;
-            margin-top: 4vh;
-            width: 150vh;
-            height: 12vh;
-            color: whitesmoke;
-            font-size: 4vh;
-            background-color: #447c84;
+        .textoContacto {
+            margin-top: 10vh;
+            height: 10vh;
+            width: 99vh;
+    
             text-align: center;
             border: 3px solid black;
         }
-
     }
 
 
-    footer {
+    /*estilos contactos*/
+    /*desktop*/
+    @media screen and (min-width: 1024px) {
 
-        .Footer_G {
-            margin-top: 3vh;
-            background-color: #447c84;
-            width: 201vh;
-            height: 39px;
-            text-align: center;
+        .contactos {
+           
+            height: 260vh;
+            width: 210vh;
+            display: grid;
+            grid-template-columns: repeat(1, 1 fr);
+            grid-template-rows: repeat(3, 1 fr);
 
+            .imgMain {
+                grid-row: 1;
+                grid-column: 1;
+                width: 50vh;
+                height: 0vh;
+
+                .imgContA {
+                    margin-top: 18vh;
+                    object-fit: cover;
+                    height: 60vh;
+                    width: 198vh;
+                }
+            }
+
+            .imgMainUno {
+                grid-row: 2;
+                grid-column: 1;
+                display: block;
+
+                .imgContB {
+                    margin-top: 10vh 0vh;
+                    object-fit: cover;
+                    width: 190vh;
+                    height: 80VH;
+                }
+            }
+
+
+            .imgMainDos {
+                height: 50vh;
+                width: 50vh;
+                object-fit: cover;
+
+                .imgContacto {
+                    grid-row: 2;
+                    object-fit: cover;
+                    align-content: center;
+                    grid-column: 1;
+                    height: 70vh;
+                    width: 200vh;
+                    margin: 0vh 2vh;
+                }
+            }
+
+            .textoContacto {
+                grid-row: 1;
+                grid-column: 1;
+                margin: 4vh 14vh;
+                width: 180vh;
+                height: 10vh;
+                color: whitesmoke;
+                font-size: 4vh;
+             
+                text-align: center;
+                border: 3px solid black;
+            }
 
         }
 
-        .Redes {
-
-            align-items: center;
-            justify-content: space-around;
-            margin-top: 1vh;
-            height: 1vh;
-            width: 195vh;
+        .redes {
+            margin: 0vh 68vh;
+            object-fit: contain;
         }
-
-
     }
-
-
-    .W_S {
-
-        display: flex;
-        height: 10vh;
-        width: 10vh;
-    }
-
-    .Face {
-
-        display: flex;
-        height: 10vh;
-        width: 1vh;
-    }
-
-    .Instagram {
-
-        display: flex;
-        height: 10vh;
-        width: 1vh;
-    }
-
-    .E_Mail {
-
-        display: flex;
-        height: 10vh;
-        width: 1vh;
-    }
-
-
-    .fieldset_legend {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 6vh;
-        margin-bottom: 10vh;
-
-    }
-
-    .legend_label {
-        display: flex;
-        width: 190vh;
-        height: 5vh;
-        background-color: #447c84;
-        border-radius: 2vh;
-        margin-bottom: 2vh;
-        border: 3px solid rgb(3, 3, 3);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 15px;
-        color: rgb(218, 238, 255);
-    }
-
-
-    .boton {
-        background-color: #447c84;
-        padding: 8px;
-        width: 10vh;
-        height: 5vh;
-        margin: 16px 1;
-
-    }
-
-    .boton:hover {
-        height: 10vh;
-        width: 20vh;
-        background-color: #040404;
-        color: #fdecda;
-    }
-
-
-
-
 }
