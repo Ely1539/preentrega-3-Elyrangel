@@ -12,21 +12,21 @@
 .fieldsetLegend {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1vh;
-    width: 40vh;
+    width: 50vh;
 
 }
 
 .legendLabel {
     display: flex;
-    width: 60vh;
-    height: 5vh;
-    background-color: $color-descripcion;
+    width: 49vh;
+    height: 7vh;
+    margin: 1vh 1vh;
     border-radius: 2vh;
     margin-bottom: 2vh;
-    border: 3px solid rgb(3, 3, 3);
+    @extend %border;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
-    color: $color-text;
+
 
 }
 
@@ -40,12 +40,10 @@
 .boton:hover {
     height: 10vh;
     width: 20vh;
-    background-color:$color-descripcion;
-    color: $color-text;
+    @extend %border;
 }
 
 .contactos {
-  
     height: 170vh;
     width: 60vh;
 
@@ -55,8 +53,9 @@
 
         .imgContA {
             object-fit: cover;
-            width: 60vh;
+            width: 50vh;
             height: 38vh;
+            margin: 0vh 2vh;
         }
     }
 
@@ -67,8 +66,8 @@
         .imgContB {
             object-fit: cover;
             height: 38vh;
-            width: 60vh;
-            margin: 0vh 0vh
+            width: 48vh;
+            margin: 0vh 2vh
         }
     }
 
@@ -78,24 +77,22 @@
 
         .imgContacto {
             object-fit: cover;
-            width: 60vh;
+            width: 49vh;
             height: 40vh;
+            margin: 0vh 2vh;
         }
     }
 
     .textoContacto {
         margin: 0vh 2vh;
-        height: 13vh;
-        width: 57vh;
-        background-color: $color-descripcion;
-        color: $color-text;
-        text-align: center;
-        border: 3px solid black;
+        height: 15vh;
+        width: 48vh;
+        @extend %border;
     }
 }
 
 .redes {
-    margin: 0vh 8vh;
+    margin: 0vh 4vh;
     display: flex;
     object-fit: contain;
 
@@ -127,7 +124,6 @@
     .contactos {
         grid-template-columns: repeat(1 / 1fr);
         grid-template-rows: repeat(4 / 1fr);
-       
         width: 110vh;
         height: 180vh;
 
@@ -177,9 +173,6 @@
             margin-top: 10vh;
             height: 10vh;
             width: 99vh;
-    
-            text-align: center;
-            border: 3px solid black;
         }
     }
 
@@ -189,7 +182,6 @@
     @media screen and (min-width: 1024px) {
 
         .contactos {
-           
             height: 260vh;
             width: 210vh;
             display: grid;
@@ -246,13 +238,8 @@
                 margin: 4vh 14vh;
                 width: 180vh;
                 height: 10vh;
-                color: whitesmoke;
                 font-size: 4vh;
-             
-                text-align: center;
-                border: 3px solid black;
             }
-
         }
 
         .redes {

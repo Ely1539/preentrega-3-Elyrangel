@@ -1,13 +1,25 @@
+.home .loremIndex, .home .desc, .home .homeP, footer, .legendLabel, .boton:hover, .contactos .textoContacto, .equipos .parrafoGa, .equipos .pHUno, .mainSol .descripcionImgS, .mainSol .pEm, .mainSol .pPer, .mainSol .pEmpresas, .mainSol .pEj, .mainSol .parrafoG, header .textoTitulo, .valija .textVUno, .valija .textVDos, .valija .textVTres {
+  border: 2px solid black;
+  text-align: center;
+  background-color: #E3F4F4;
+  color: black; }
+
 /*reset*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+.home .loremIndex, .home .desc, .home .homeP, footer, .legendLabel, .boton:hover, .contactos .textoContacto, .equipos .parrafoGa, .equipos .pHUno, .mainSol .descripcionImgS, .mainSol .pEm, .mainSol .pPer, .mainSol .pEmpresas, .mainSol .pEj, .mainSol .parrafoG, header .textoTitulo, .valija .textVUno, .valija .textVDos, .valija .textVTres {
+  border: 2px solid black;
+  text-align: center;
+  background-color: #E3F4F4;
+  color: black; }
+
 /*HOME*/
 /* ESTILOS CELULARES*/
 body {
-  background-color: #829460;
+  background-color: #F8F6F4;
   height: 100vh;
   width: 40vh; }
 
@@ -26,7 +38,7 @@ header div .contenedorLogo {
 
 .home {
   height: 150vh;
-  width: 60vh; }
+  width: 53vh; }
   .home .descripcionImg {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -35,26 +47,23 @@ header div .contenedorLogo {
   .home .loremIndex {
     grid-row: 4;
     grid-column: 1;
-    text-align: center;
-    margin: 1vh 5vh;
-    border: 2px solid black;
+    margin: 1vh 3vh;
     height: 10vh;
-    width: 50vh;
-    background-color: #665A48;
-    color: whitesmoke;
+    width: 45vh;
     font-size: 1.5vh; }
+  .home .desc {
+    grid-row: 2;
+    grid-column: 2/ span 1;
+    margin: 8vh 4vh;
+    height: 15vh;
+    width: 90vh; }
   .home .homeP {
     grid-row: 1;
     grid-column: 1;
-    background-color: #005954;
-    margin-top: 1vh;
-    width: 58vh;
+    margin: 1vh 2vh;
+    width: 49vh;
     height: 12vh;
-    font-size: 1.5vh;
-    text-align: center;
-    background-color: #665A48;
-    color: whitesmoke;
-    border: 2px solid black; }
+    font-size: 1.5vh; }
   .home .imgUno {
     grid-row: 2;
     grid-column: 1;
@@ -62,8 +71,8 @@ header div .contenedorLogo {
     .home .imgUno .imgU {
       object-fit: cover;
       height: 79vh;
-      width: 58vh;
-      margin-top: 0vh; }
+      width: 48vh;
+      margin: 0vh 2vh; }
   .home .imgDos {
     width: 10vh;
     height: 10vh;
@@ -71,9 +80,9 @@ header div .contenedorLogo {
     grid-column: 1;
     margin-top: 12vh; }
   .home .imgD {
-    width: 58vh;
+    width: 48vh;
     height: 40vh;
-    margin: 1vh 0vh; }
+    margin: 1vh 2vh; }
   .home .imgTres {
     display: none; }
   .home .imgSeisF {
@@ -89,14 +98,17 @@ header div .contenedorLogo {
     display: none; }
 
 section {
-  width: 60vh;
+  width: 53vh;
   text-align: center; }
   section .inforEq .sectionHaeq {
-    background-color: #C3EDC0; }
+    background-color: #C4DFDF; }
   section .inforEq .sectionHbeq {
-    background-color: #E9FFC2; }
+    background-color: #D2E9E9; }
   section .inforEq .sectionHceq {
-    background-color: #FDFFAE; }
+    background-color: #C4DFDF; }
+
+footer {
+  width: 53vh; }
 
 /*estilos tablet home*/
 @media screen and (min-width: 700px) {
@@ -111,14 +123,10 @@ section {
     .home .loremIndex {
       grid-row: 2;
       grid-column: 1/ span 1;
-      text-align: center;
       margin-top: 62vh;
-      border: 2px solid black;
       height: 8vh;
       width: 98vh;
-      font-size: 2vh;
-      background-color: #665A48;
-      color: whitesmoke; }
+      font-size: 2vh; }
     .home .imgCuatro {
       grid-row: 2;
       grid-column: 1/span 2;
@@ -151,24 +159,9 @@ section {
     .home .desc {
       grid-row: 2;
       grid-column: 2/ span 1;
-      text-align: center;
       margin: 8vh 4vh;
-      border: 2px solid black;
       height: 15vh;
-      width: 90vh;
-      background-color: #665A48;
-      color: whitesmoke; }
-    .home .homeP {
-      display: grid;
-      grid-row: 1;
-      grid-column: 4;
-      margin-top: 16vh;
-      width: 28vh;
-      height: 20vh;
-      font-size: 1.5vh;
-      background-color: #665A48;
-      color: whitesmoke;
-      border: 2px solid black; }
+      width: 90vh; }
     .home .imgUno {
       display: grid;
       grid-row: 1;
@@ -178,6 +171,14 @@ section {
       margin-top: 0vh; }
       .home .imgUno .imgU {
         width: 80vh; }
+      .home .imgUno .homeP {
+        display: grid;
+        grid-row: 1;
+        grid-column: 2;
+        margin: 16vh 0vh;
+        width: 24vh;
+        height: 22vh;
+        font-size: 1.5vh; }
     .home .imgDos {
       display: none; }
     .home .imgTres {
@@ -193,14 +194,16 @@ section {
     .home .imgSeis,
     .home .imgSiete {
       display: block; }
-    .home footer h2 {
-      width: 300vh; }
-  /*estilos para desktop*/
-  /* home*/ }
+  section {
+    width: 108vh; }
+  footer {
+    width: 108vh; } }
 
-@media screen and (min-width: 700px) and (min-width: 1024px) {
+/*estilos para desktop*/
+/* home*/
+@media screen and (min-width: 1024px) {
   .home {
-    height: 330vh;
+    height: 320vh;
     width: 200vh; }
     .home .descripcionImg {
       margin-top: 0vh;
@@ -211,6 +214,10 @@ section {
       grid-template-rows: repeat(1, 1fr); }
     .home .imgUno {
       display: none; }
+      .home .imgUno .imgU {
+        display: none; }
+      .home .imgUno .homeP {
+        display: none; }
     .home .imgCuatro,
     .home .imgSeis {
       display: block; }
@@ -260,33 +267,38 @@ section {
     .home .loremIndex {
       grid-row: 4;
       grid-column: 1/ span 1;
-      text-align: center;
       margin-top: 30vh;
-      border: 2px solid black;
-      height: 6vh;
-      width: 200vh;
-      font-size: 2vh;
-      background-color: #665A48;
-      color: whitesmoke; } }
+      height: 5vh;
+      width: 195vh;
+      font-size: 2vh; }
+  section {
+    width: 210vh;
+    margin-top: 10vh; }
+  footer {
+    width: 210vh; } }
+
+.home .loremIndex, .home .desc, .home .homeP, footer, .legendLabel, .boton:hover, .contactos .textoContacto, .equipos .parrafoGa, .equipos .pHUno, .mainSol .descripcionImgS, .mainSol .pEm, .mainSol .pPer, .mainSol .pEmpresas, .mainSol .pEj, .mainSol .parrafoG, header .textoTitulo, .valija .textVUno, .valija .textVDos, .valija .textVTres {
+  border: 2px solid black;
+  text-align: center;
+  background-color: #E3F4F4;
+  color: black; }
 
 /*contactos*/
 /*estilos celulares*/
 .fieldsetLegend {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1vh;
-  width: 40vh; }
+  width: 50vh; }
 
 .legendLabel {
   display: flex;
-  width: 60vh;
-  height: 5vh;
-  background-color: #665A48;
+  width: 49vh;
+  height: 7vh;
+  margin: 1vh 1vh;
   border-radius: 2vh;
   margin-bottom: 2vh;
-  border: 3px solid #030303;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 15px;
-  color: whitesmoke; }
+  font-size: 15px; }
 
 .boton {
   padding: 8px;
@@ -296,9 +308,7 @@ section {
 
 .boton:hover {
   height: 10vh;
-  width: 20vh;
-  background-color: #665A48;
-  color: whitesmoke; }
+  width: 20vh; }
 
 .contactos {
   height: 170vh;
@@ -308,34 +318,32 @@ section {
     width: 20vh; }
     .contactos .imgMain .imgContA {
       object-fit: cover;
-      width: 60vh;
-      height: 38vh; }
+      width: 50vh;
+      height: 38vh;
+      margin: 0vh 2vh; }
   .contactos .imgMainUno {
     height: 50vh;
     width: 20vh; }
     .contactos .imgMainUno .imgContB {
       object-fit: cover;
       height: 38vh;
-      width: 60vh;
-      margin: 0vh 0vh; }
+      width: 48vh;
+      margin: 0vh 2vh; }
   .contactos .imgMainDos {
     height: 50vh;
     width: 50vh; }
     .contactos .imgMainDos .imgContacto {
       object-fit: cover;
-      width: 60vh;
-      height: 40vh; }
+      width: 49vh;
+      height: 40vh;
+      margin: 0vh 2vh; }
   .contactos .textoContacto {
     margin: 0vh 2vh;
-    height: 13vh;
-    width: 57vh;
-    background-color: #665A48;
-    color: whitesmoke;
-    text-align: center;
-    border: 3px solid black; }
+    height: 15vh;
+    width: 48vh; }
 
 .redes {
-  margin: 0vh 8vh;
+  margin: 0vh 4vh;
   display: flex;
   object-fit: contain; }
   .redes .wS {
@@ -401,9 +409,7 @@ section {
     .contactos .textoContacto {
       margin-top: 10vh;
       height: 10vh;
-      width: 99vh;
-      text-align: center;
-      border: 3px solid black; }
+      width: 99vh; }
   /*estilos contactos*/
   /*desktop*/ }
 
@@ -451,10 +457,7 @@ section {
       margin: 4vh 14vh;
       width: 180vh;
       height: 10vh;
-      color: whitesmoke;
-      font-size: 4vh;
-      text-align: center;
-      border: 3px solid black; }
+      font-size: 4vh; }
   .redes {
     margin: 0vh 68vh;
     object-fit: contain; } }
@@ -462,59 +465,50 @@ section {
 /*estilos page equipos de trabajo*/
 /*CELULARES*/
 .equipos {
-  height: 150vh;
-  width: 60vh; }
+  height: 155vh;
+  width: 52vh; }
   .equipos .imgsEq {
-    width: 60vh;
+    width: 52vh;
     height: 180vh;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .equipos .parrafoGa {
-    color: whitesmoke;
-    background-color: #665A48;
     grid-row: 1;
     grid-column: 1;
     margin-top: 42vh;
-    width: 59vh;
-    height: 14vh;
-    text-align: center;
-    border: 2px solid black; }
+    width: 52vh;
+    height: 14vh; }
   .equipos .inforEq {
     grid-row: 1;
     grid-column: 1;
-    margin-top: 1vh;
+    margin: 1vh 2vh;
     height: 20vh;
-    width: 50vh;
+    width: 48vh;
     text-align: center; }
   .equipos .pHUno {
     grid-row: 2;
     grid-column: 1/ span 1;
-    width: 50vh;
-    margin-left: 1vh;
-    margin-top: 1vh;
-    text-align: center;
-    background-color: #665A48;
-    color: whitesmoke;
-    border: 2px solid black; }
+    width: 49vh;
+    margin: 1vh 2vh; }
   .equipos .parrafoImgH {
     grid-row: 2;
     grid-column: 1;
     object-fit: cover;
     width: 0vh; }
     .equipos .parrafoImgH .pIh {
-      margin-top: 5vh;
+      margin: 5vh 2vh;
       height: 30vh;
-      width: 58vh; }
+      width: 48vh; }
   .equipos .parrafoH {
     grid-row: 3;
     grid-column: 1;
     height: 20vh;
     width: 50vh;
-    margin: 0vh 1VH; }
+    margin: 0vh 2VH; }
     .equipos .parrafoH .pImgi {
       height: 40vh;
-      width: 58vh; }
+      width: 48vh; }
   .equipos .pH {
     display: none; }
   .equipos .parrafoImgI {
@@ -522,11 +516,10 @@ section {
   .equipos .imgOn {
     grid-row: 1;
     grid-column: 1;
-    width: 50vh; }
+    width: 40vh; }
     .equipos .imgOn .imgOnu {
-      margin-top: 0vh;
-      height: 40VH;
-      width: 56VH;
+      margin: 0vh 2vh;
+      width: 48vh;
       object-fit: cover; }
 
 @media screen and (min-width: 700px) {
@@ -545,19 +538,13 @@ section {
       margin: 1vh 2vh;
       width: 95vh;
       height: 12vh;
-      font-size: 2vh;
-      text-align: center;
-      border: 2px solid black;
-      color: whitesmoke;
-      background-color: #665A48; }
+      font-size: 2vh; }
     .equipos .pHUno {
       grid-row: 1;
       grid-column: 1;
       width: 90vh;
       margin-left: 6vh;
-      margin-top: 1vh;
-      text-align: center;
-      border: 2px solid black; }
+      margin-top: 0vh; }
     .equipos .imgOn {
       margin-top: 15vh;
       height: 60VH;
@@ -587,7 +574,7 @@ section {
       object-fit: cover;
       height: 95vh;
       width: 70vh;
-      margin: 68vh 0vh; }
+      margin: 70vh 0vh; }
       .equipos .parrafoH .pImgi {
         height: 70vh;
         width: 100vh; } }
@@ -611,16 +598,10 @@ section {
         margin: 25vh 122vh;
         width: 80vh;
         height: 24vh;
-        font-size: 3vh;
-        text-align: center;
-        color: whitesmoke;
-        border: 2px solid black;
-        background-color: #665A48; }
+        font-size: 3vh; }
       .equipos .imgsEq .parrafoImgH {
         grid-row: 2;
         grid-column: 1/ span 1;
-        background-color: #665A48;
-        color: whitesmoke;
         object-fit: cover;
         height: 100vh;
         width: 150vh;
@@ -635,15 +616,13 @@ section {
         object-fit: cover;
         height: 100vh;
         width: 48vh;
-        margin-top: 0vh;
-        margin-left: 1vh; }
+        margin: 0vh 1vh; }
         .equipos .imgsEq .parrafoH .pImgi {
           height: 90vh;
           width: 200vh; }
       .equipos .imgsEq .imgOn {
         grid-row: 1, span 1;
         grid-column: 1;
-        background-color: #665A48;
         object-fit: cover;
         margin-top: 1vh;
         height: 80vh;
@@ -655,62 +634,51 @@ section {
 /*estilos page soluciones humanas*/
 /*CELULARES*/
 .mainSol .descripcionImgS {
-  text-align: center;
   margin-top: 25vh;
-  display: flex;
-  background-color: #665A48; }
+  display: flex; }
 
 .mainSol .imgSUn {
   display: none; }
 
 .mainSol .imgSD {
-  height: 80vh; }
+  height: 72vh;
+  width: 48vh; }
 
 .mainSol .pEm {
-  margin-top: 2vh;
-  background-color: #665A48;
-  color: whitesmoke;
-  text-align: center;
-  width: 55vh;
-  height: 18vh;
-  border: 2px solid black; }
+  margin: 2vh 1vh;
+  width: 50vh;
+  height: 18vh; }
 
 .mainSol .imgSolU {
   object-fit: cover;
   height: 44vh;
-  margin-top: 4vh; }
+  width: 49vh;
+  margin: 4vh 2vh; }
 
 .mainSol .imgSolT {
-  margin-top: 1vh;
+  margin: 1vh 2vh;
   object-fit: cover;
-  height: 49.5vh; }
+  height: 45vh; }
 
 .mainSol .pPer {
-  background-color: #665A48;
-  color: whitesmoke;
-  text-align: center;
-  width: 55vh;
+  width: 50vh;
   height: 24vh;
-  border: 2px solid black;
-  margin-top: 2vh; }
+  margin: 2vh 1vh; }
 
 .mainSol .imgSCu {
-  margin-top: 2vh;
-  height: 50vh; }
+  margin: 2vh 1vh;
+  height: 45vh; }
 
 .mainSol .imgSolCu {
-  margin-top: 2vh;
+  margin: 2vh 1vh;
   object-fit: cover;
-  height: 28vh; }
+  height: 28vh;
+  width: 49vh; }
 
 .mainSol .pEmpresas {
-  background-color: #665A48;
-  color: whitesmoke;
-  text-align: center;
-  width: 55vh;
+  width: 50vh;
   height: 14vh;
-  border: 2px solid black;
-  margin-top: 2vh; }
+  margin: 2vh 1vh; }
 
 .mainSol .imgSCi {
   height: 65vh; }
@@ -719,23 +687,17 @@ section {
   margin-top: 2vh;
   object-fit: cover;
   height: 41vh;
-  margin-top: 2vh; }
+  width: 48vh;
+  margin: 2vh 2vh; }
 
 .mainSol .pEj {
-  background-color: #665A48;
-  color: whitesmoke;
   height: 12vh;
-  width: 55vh;
-  margin-top: 2vh;
-  text-align: center;
-  border: 2px solid black; }
+  width: 50vh;
+  margin: 2vh 2vh; }
 
 .mainSol .parrafoG {
-  background-color: #665A48;
-  color: whitesmoke;
-  width: 55vh;
-  text-align: center;
-  border: 2px solid black; }
+  width: 50vh;
+  margin: 0vh 1vh; }
 
 /*soluciones estilos tablet*/
 @media screen and (min-width: 700px) {
@@ -771,13 +733,9 @@ section {
         width: 110vh;
         height: 80vh; }
     .mainSol .pEm {
-      margin-top: 2vh;
-      background-color: #665A48;
-      color: whitesmoke;
-      text-align: center;
+      margin: 2vh 0vh;
       width: 105vh;
-      height: 9vh;
-      border: 2px solid black; }
+      height: 9vh; }
     .mainSol .imgST {
       grid-row: 2;
       grid-column: 1;
@@ -788,13 +746,9 @@ section {
         height: 39vh;
         width: 50vh; }
     .mainSol .pPer {
-      background-color: #665A48;
-      color: whitesmoke;
-      text-align: center;
       width: 105vh;
       height: 12vh;
-      margin-top: 25vh;
-      border: 2px solid black; }
+      margin: 25vh 0vh; }
     .mainSol .imgSCu {
       grid-row: 2;
       grid-column: 1;
@@ -806,13 +760,9 @@ section {
         height: 39vh;
         width: 50vh; }
     .mainSol .pEmpresas {
-      background-color: #665A48;
-      color: whitesmoke;
-      text-align: center;
       width: 105vh;
       height: 8vh;
-      border: 2px solid black;
-      margin-top: 2; }
+      margin: 4vh 0vh; }
     .mainSol .imgSCi {
       grid-column: 1;
       grid-row: 2; }
@@ -822,43 +772,32 @@ section {
         height: 71vh;
         width: 105vh; }
     .mainSol .pEj {
-      background-color: #665A48;
-      color: whitesmoke;
       height: 8vh;
       width: 105vh;
       font-size: 2vh;
-      margin-top: 3vh;
-      text-align: center;
-      border: 2px solid black; }
+      margin: 0vh 0vh; }
     .mainSol .parrafoG {
       grid-column: 1;
       grid-row: 1;
-      background-color: #665A48;
-      color: whitesmoke;
       width: 105vh;
       height: 16vh;
-      margin-top: 1vh;
-      text-align: center;
-      border: 2px solid black; } }
+      margin: 3vh 0vh; } }
 
 /*estilos soluciones para desktop*/
 @media screen and (min-width: 1024px) {
   .mainSol {
-    height: 260vh;
+    height: 340vh;
     width: 205vh; }
     .mainSol .descripcionImgsS {
       width: 10vh;
       padding: 1rem;
       margin-top: 5vh;
       display: grid;
-      grid-template-columns: 125vh;
-      grid-template-rows: 90vh 60vh 110vh 50vh;
-      grid-gap: 1rem; }
+      grid-template-columns: repeat(1/1fr);
+      grid-template-rows: repeat(6/1fr); }
     .mainSol .imgSUn {
       display: grid;
       grid-row: 1;
-      background-color: #665A48;
-      color: whitesmoke;
       text-align: center;
       display: block;
       height: 80vh;
@@ -874,79 +813,68 @@ section {
       font-size: 4vh;
       height: 16vh; }
     .mainSol .imgSD {
-      grid-row: 1/3;
+      grid-row: 1;
+      grid-column: 1;
       height: 10vh; }
+      .mainSol .imgSD .imgSolU {
+        object-fit: cover;
+        margin-top: 8vh;
+        width: 120vh;
+        width: 100vh; }
     .mainSol .pEm {
-      margin-top: 2vh;
-      color: whitesmoke;
-      background-color: #665A48;
-      text-align: center;
+      grid-row: 4;
+      grid-column: 1;
+      margin-top: 242vh;
       width: 200vh;
-      height: 8vh;
-      border: 2px solid black; }
-    .mainSol .imgSolU {
-      object-fit: cover;
-      margin-top: 3vh;
-      grid-column: 1/4; }
+      height: 8vh; }
     .mainSol .imgST {
       grid-column: 1;
-      grid-row: 2;
+      grid-row: 3;
       height: 30vh; }
       .mainSol .imgST .imgSolT {
-        margin: 12vh 0vh 0vh 0vh;
+        margin: 115vh 0vh 0vh 0vh;
         object-fit: cover;
         height: 50vh;
         width: 100vh; }
     .mainSol .imgSCu {
       grid-row: 3;
       grid-column: 1;
-      margin: 25vh 0vh; }
+      margin: 60vh 0vh; }
       .mainSol .imgSCu .imgSolCu {
         object-fit: cover;
         height: 50vh;
         width: 145vh; }
     .mainSol .pEmpresas {
-      background-color: #665A48;
-      color: whitesmoke;
-      text-align: center;
-      width: 100vh;
+      width: 115vh;
       height: 9vh;
-      border: 2px solid black;
       margin: 2vh 85vh; }
     .mainSol .imgSCi {
       grid-column: 1;
       grid-row: 2; }
       .mainSol .imgSCi .imgSolCi {
-        margin-top: 5vh;
+        margin-top: 38vh;
         object-fit: cover;
         height: 81vh;
         width: 200vh; }
     .mainSol .pPer {
-      background-color: #665A48;
-      color: whitesmoke;
-      grid-row: 1;
-      width: 50vh;
-      height: 28vh;
-      margin: 29vh 2vh; }
+      display: none; }
     .mainSol .pEj {
-      background-color: #665A48;
-      color: whitesmoke;
       height: 10vh;
       width: 198vh;
       font-size: 3vh;
-      margin-top: 2vh;
-      text-align: center;
-      border: 2px solid black; }
+      margin-top: 2vh; }
     .mainSol .parrafoG {
       grid-column: 1;
-      margin-top: 4vh;
+      margin-top: 16vh;
       grid-row: 2;
-      background-color: #665A48;
-      color: whitesmoke;
       width: 200vh;
-      height: 10vh;
-      text-align: center;
-      border: 2px solid black; } }
+      height: 10vh; } }
+
+.home .loremIndex, .home .desc, .home .homeP, footer, .legendLabel, .boton:hover, .contactos .textoContacto, .equipos .parrafoGa, .equipos .pHUno, .mainSol .descripcionImgS, .mainSol .pEm, .mainSol .pPer, .mainSol .pEmpresas, .mainSol .pEj, .mainSol .parrafoG, header .textoTitulo, .valija .textVUno, .valija .textVDos, .valija .textVTres {
+  border: 2px solid black;
+  text-align: center;
+  background-color: #E3F4F4;
+  color: black; }
 
 /*estilos pagina arma tu valija*/
 /*CELULARES*/
@@ -961,14 +889,12 @@ header div a .logoImg {
   width: 35vh; }
 
 header .textoTitulo {
-  margin-top: 1vh;
-  text-align: center;
-  width: 62vh;
-  height: 14vh; }
+  width: 52vh;
+  height: 18vh; }
 
 .valija {
   height: 190vh;
-  width: 60vh; }
+  width: 53vh; }
   .valija .contenedorValija {
     height: 160vh;
     width: 50VH;
@@ -984,26 +910,18 @@ header .textoTitulo {
     .valija .imgUnoV .imgUv {
       margin: 1vh 1vh;
       height: 30vh;
-      width: 58vh; }
+      width: 53vh; }
   .valija .textVUno {
     grid-row: 2;
     margin: 5vh 2vh;
-    width: 55vh;
-    height: 12vh;
-    text-align: center;
-    background-color: #665A48;
-    color: whitesmoke;
-    border: 2px solid black; }
+    width: 50vh;
+    height: 14vh; }
   .valija .textVDos {
     display: none; }
   .valija .textVTres {
-    margin: 1vh 0vh;
-    height: 24vh;
-    width: 60vh;
-    text-align: center;
-    background-color: #665A48;
-    color: whitesmoke;
-    border: 2px solid black; }
+    margin: 0vh 2vh;
+    height: 29vh;
+    width: 50vh; }
   .valija .textVCuatro {
     display: none; }
   .valija .imgDosV {
@@ -1015,18 +933,18 @@ header .textoTitulo {
     height: 0vh;
     width: 0vh; }
     .valija .imgTresV .imgTv {
-      margin-top: 55vh;
+      margin: 55vh 1vh;
       height: 50vh;
-      width: 60vh; }
+      width: 52vh; }
   .valija .imgCuatroV {
     object-fit: cover;
     height: 4vh;
     width: 50vh;
     margin-top: 0vh; }
     .valija .imgCuatroV .imgCv {
-      margin-top: 12vh;
+      margin: 12vh 1vh;
       height: 39vh;
-      width: 60vh; }
+      width: 52vh; }
   .valija .textF {
     display: none; }
 
@@ -1049,7 +967,7 @@ header .textoTitulo {
       width: 10vh;
       height: 10vh; }
       .valija .imgUnoV .imgUv {
-        margin: 42vh 8vh;
+        margin: 44vh 8vh;
         height: 42vh;
         width: 80vh; }
     .valija .imgTresV {
@@ -1059,7 +977,7 @@ header .textoTitulo {
       height: 10vh;
       width: 70vh; }
       .valija .imgTresV .imgTv {
-        margin: 0vh 2vh;
+        margin: 2vh 2vh;
         height: 40vh;
         width: 102vh; }
     .valija .imgCuatroV {
@@ -1069,28 +987,20 @@ header .textoTitulo {
       width: 0vh;
       height: 0vh; }
       .valija .imgCuatroV .imgCv {
-        margin-top: 0vh;
+        margin-top: 2vh;
         height: 70vh;
         width: 110vh; }
     .valija .textVUno {
       grid-row: 1;
       width: 100vh;
       height: 12vh;
-      margin-top: 1vh;
-      text-align: center;
-      background-color: #665A48;
-      color: whitesmoke;
-      border: 2px solid black; }
+      margin-top: 1vh; }
     .valija .textVTres {
       grid-row: 2;
-      background-color: #665A48;
-      color: whitesmoke;
       margin: 0vh 2vh;
       display: block;
       height: 20vh;
-      width: 100vh;
-      text-align: center;
-      border: 2px solid black; } }
+      width: 100vh; } }
 
 /*estilos valija*/
 /*desktop*/
@@ -1100,7 +1010,6 @@ header .textoTitulo {
     width: 120vh; }
     .valija .textoTitulo {
       margin-top: 0vh;
-      text-align: center;
       width: 130vh;
       height: 12vh; }
     .valija .contenedorValija {
@@ -1163,19 +1072,6 @@ header .textoTitulo {
       margin-top: 5vh;
       display: block;
       width: 120vh;
-      height: 10vh;
-      background-color: #665A48;
-      color: whitesmoke;
-      text-align: center;
-      border: 2px solid black; }
+      height: 10vh; }
     .valija .textVTres {
       display: none; } }
-
-footer {
-  width: 100vh; }
-  footer h2 {
-    object-fit: cover;
-    width: 100%;
-    background-color: #665A48;
-    color: whitesmoke;
-    text-align: center; }

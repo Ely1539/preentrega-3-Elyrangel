@@ -1,7 +1,8 @@
 //import
 
 @import "utilidades/vars";
-
+@import "utilidades/extend";
+@import "utilidades/mixin";
 
 
 /*reset*/
@@ -16,4 +17,3 @@
 @import "html/equipos";
 @import "html/soluciones";
 @import "html/valija";
-@import "html/footer";

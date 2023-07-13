@@ -16,7 +16,6 @@
 header {
     div {
         .contenedorLogo {
-
             width: 35vh;
             height: 45vh;
             margin-top: 50vh;
@@ -34,17 +33,16 @@ header {
     }
 
     .textoTitulo {
-        margin-top: 1vh;
-        text-align: center;
-        width: 62vh;
-        height: 14vh;
+        @extend %border;
+        width: 52vh;
+        height: 18vh;
     }
 }
 
 .valija {
 
     height: 190vh;
-    width: 60vh;
+    width: 53vh;
 
     .contenedorValija {
         height: 160vh;
@@ -64,33 +62,28 @@ header {
         .imgUv {
             margin: 1vh 1vh;
             height: 30vh;
-            width: 58vh;
+            width: 53vh;
         }
     }
 
     .textVUno {
         grid-row: 2;
         margin: 5vh 2vh;
-        width: 55vh;
-        height: 12vh;
-        text-align: center;
-        background-color: $color-descripcion;
-        color: $color-text;
-        border: 2px solid black;
+        width: 50vh;
+        height: 14vh;
+        @extend %border;
     }
 
     .textVDos {
         display: none;
+        @extend %border
     }
 
     .textVTres {
-        margin: 1vh 0vh;
-        height: 24vh;
-        width: 60vh;
-        text-align: center;
-        background-color: $color-descripcion;
-        color: $color-text;
-        border: 2px solid black;
+        margin: 0vh 2vh;
+        height: 29vh;
+        width: 50vh;
+        @extend %border;
     }
 
     .textVCuatro {
@@ -109,23 +102,23 @@ header {
         width: 0vh;
 
         .imgTv {
-            margin-top: 55vh;
+            margin: 55vh 1vh;
             height: 50vh;
-            width: 60vh;
+            width: 52vh;
         }
     }
 
     .imgCuatroV {
-      
+
         object-fit: cover;
         height: 4vh;
         width: 50vh;
         margin-top: 0vh;
 
         .imgCv {
-            margin-top:12vh;
+            margin: 12vh 1vh;
             height: 39vh;
-            width: 60vh;
+            width: 52vh;
         }
     }
 
@@ -140,10 +133,10 @@ header {
 
 @media screen and (min-width:700px) {
 
-  
+
 
     .valija {
-      
+
         height: 185vh;
         width: 110vh;
 
@@ -154,7 +147,7 @@ header {
             grid-template-columns: repeat(1/ 1fr);
             grid-template-rows: repeat(3/ 1fr);
         }
-       
+
 
         .imgUnoV {
             grid-row: 1;
@@ -164,7 +157,7 @@ header {
             height: 10vh;
 
             .imgUv {
-                margin: 42vh 8vh;
+                margin: 44vh 8vh;
                 height: 42vh;
                 width: 80vh;
             }
@@ -178,7 +171,7 @@ header {
             width: 70vh;
 
             .imgTv {
-                margin: 0vh 2vh;
+                margin: 2vh 2vh;
                 height: 40vh;
                 width: 102vh;
             }
@@ -192,7 +185,7 @@ header {
             height: 0vh;
 
             .imgCv {
-                margin-top: 0vh;
+                margin-top: 2vh;
                 height: 70vh;
                 width: 110vh;
             }
@@ -203,22 +196,16 @@ header {
             width: 100vh;
             height: 12vh;
             margin-top: 1vh;
-            text-align: center;
-            background-color: $color-descripcion;
-            color: $color-text;
-            border: 2px solid black;
+
         }
 
         .textVTres {
             grid-row: 2;
-            background-color:$color-descripcion;
-            color: $color-text;
             margin: 0vh 2vh;
             display: block;
             height: 20vh;
             width: 100vh;
-            text-align: center;
-            border: 2px solid black;
+
         }
     }
 }
@@ -234,7 +221,6 @@ header {
 
         .textoTitulo {
             margin-top: 0vh;
-            text-align: center;
             width: 130vh;
             height: 12vh;
 
@@ -261,11 +247,11 @@ header {
                 height: 60vh;
                 width: 175vh;
             }
-            
-        .textVUno {
-            display: none;
 
-        }
+            .textVUno {
+                display: none;
+
+            }
         }
 
         .imgDosV {
@@ -325,10 +311,6 @@ header {
             display: block;
             width: 120vh;
             height: 10vh;
-            background-color: $color-descripcion;
-            color: $color-text;
-            text-align: center;
-            border: 2px solid black;
         }
 
         .textVTres {
