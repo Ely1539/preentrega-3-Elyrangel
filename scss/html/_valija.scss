@@ -216,7 +216,7 @@ header {
 @media screen and (min-width: 1024px) {
 
     .valija {
-        height: 275vh;
+        height: 255vh;
         width: 120vh;
 
         .textoTitulo {
@@ -241,11 +241,11 @@ header {
             object-fit: cover;
             width: 20vh;
             height: 20vh;
-            margin: 30vh 0vh;
+            margin: 55vh 0vh;
 
             .imgUv {
-                height: 60vh;
-                width: 175vh;
+                height: 70vh;
+                width: 180vh;
             }
 
             .textVUno {
@@ -263,37 +263,39 @@ header {
             width: 40vh;
 
             .imgDv {
-                margin: 83vh 2vh;
+                margin: 59vh 5vh;
                 height: 80vh;
-                width: 90vh;
+                width: 190vh;
             }
         }
 
         .imgTresV {
-            grid-row: 2;
-            grid-column: 2;
+            grid-row: 1;
+            grid-column: 1;
             object-fit: cover;
-            width: 80vh;
+            width:70vh;
             height: 40vh;
-            margin-top: 53vh;
+            
 
             .imgTv {
+      
                 height: 80vh;
-                width: 100vh;
-                margin: 30vh 52vh;
+                width: 80vh;
+                margin: 18vh 04vh;
             }
         }
 
         .imgCuatroV {
             grid-row: 1;
+            grid-column: 2;
             object-fit: cover;
             width: 40vh;
             height: 40vh;
 
             .imgCv {
-                margin: 20vh 2vh;
-                height: 100vh;
-                width: 190vh;
+                margin: 18vh 20vh;
+                height: 80vh;
+                width: 105vh;
             }
         }
 

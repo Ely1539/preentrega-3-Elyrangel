@@ -17,6 +17,7 @@
 
     .imgSUn {
         display: none;
+        @extend %border;
     }
 
     .imgSD {
@@ -101,6 +102,7 @@
         margin: 0vh 1vh;
 
     }
+    
 }
 
 
@@ -124,19 +126,14 @@
 
         .imgSUn {
             display: none;
+  
         }
 
         .imgSol {
             display: none;
         }
 
-        .pCo {
-            text-align: center;
-            width: 50vh;
-            font-size: 2vh;
-            height: 16vh;
-        }
-
+    
         .imgSolU {
             object-fit: cover;
             height: 44vh;
@@ -252,28 +249,28 @@
         }
 
         .imgSUn {
+            
             display: grid;
             grid-row: 1;
+            grid-column: 1;
             text-align: center;
             display: block;
-            height: 80vh;
-            width: 63vh;
+            height: 6vh;
+            width: 80vh;
+            margin: 0vh 110vh;
+            
 
             .imgSol {
                 display: block;
+                margin: 3vh 0vh;
                 object-fit: cover;
-                height: 60vh;
-                width: 71vh;
+                height: 80vh;
+                width: 80vh;
             }
+  
         }
 
-        .pCo {
-            text-align: center;
-            width: 115vh;
-            font-size: 4vh;
-            height: 16vh;
-        }
-
+     
         .imgSD {
             grid-row: 1;
             grid-column: 1;
@@ -281,7 +278,7 @@
 
             .imgSolU {
                 object-fit: cover;
-                margin-top: 8vh;
+                margin-top: 25vh;
                 width: 120vh;
                 width: 100vh;
             }
@@ -289,9 +286,9 @@
         }
 
         .pEm {
-            grid-row: 4;
+            grid-row: 1;
             grid-column: 1;
-            margin-top: 242vh;
+            margin-top: 0vh;
             width: 200vh;
             height: 8vh;
 
@@ -302,9 +299,11 @@
             grid-column: 1;
             grid-row: 3;
             height: 30vh;
+            width: 70vh;
+            
 
             .imgSolT {
-                margin: 115vh 0vh 0vh 0vh;
+                margin: 145vh 0vh 0vh 0vh;
                 object-fit: cover;
                 height: 50vh;
                 width: 100vh;
@@ -314,7 +313,8 @@
         .imgSCu {
             grid-row: 3;
             grid-column: 1;
-            margin: 60vh 0vh;
+            width: 80vh;
+            margin: 85vh 0vh;
 
             .imgSolCu {
                 object-fit: cover;
@@ -331,13 +331,15 @@
 
         .imgSCi {
             grid-column: 1;
-            grid-row: 2;
+            grid-row: 4;
+            width: 140vh;
 
             .imgSolCi {
-                margin-top: 38vh;
+                margin-top: 5vh;
                 object-fit: cover;
                 height: 81vh;
                 width: 200vh;
+                
             }
         }
 
@@ -348,18 +350,18 @@
 
         .pEj {
             height: 10vh;
-            width: 198vh;
+            width: 170vh;
             font-size: 3vh;
-            margin-top: 2vh;
+            margin: 2vh 0vh;
 
         }
 
         .parrafoG {
             grid-column: 1;
-            margin-top: 16vh;
-            grid-row: 2;
-            width: 200vh;
-            height: 10vh;
+            grid-row: 1;
+            margin:0vh 12vh;
+            width: 70vh;
+            height: 23vh;
         }
     }
 }
